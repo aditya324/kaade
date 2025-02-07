@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/service.css">
+</head>
+
+<style>
+	/* Custom CSS for Hero Section */
+	.hero-section {
+		position: relative;
+		height: 100vh;
+		background: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		text-align: center;
+	}
+
+	.hero-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 1;
+		animation: fadeInUp 1.5s ease-out;
+	}
+
+	.hero-content h1 {
+		font-size: 3.5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.hero-content p {
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.btn-primary {
+		background-color: #007bff;
+		border: none;
+		padding: 1rem 2rem;
+		font-size: 1.2rem;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary:hover {
+		background-color: #0056b3;
+		transform: translateY(-5px);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	/* Keyframes for Fade-In Animation */
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+</style>
+<body>
+
+    <!-- Navigation Bar -->
+    
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content text-center text-white">
+                <h1 class="display-4 fw-bold">Comprehensive Healthcare Services</h1>
+                <p class="lead mb-4">Your health is our priority. Explore our wide range of medical services designed to meet your needs.</p>
+                <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Core Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-stethoscope fa-3x mb-4 text-primary"></i>
+                            <h5 class="card-title fw-bold mb-3">General Medicine</h5>
+                            <p class="card-text">Expert Care for Your Everyday Health Needs. Our team of skilled general physicians is dedicated to diagnosing and managing a wide range of health conditions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-heartbeat fa-3x mb-4 text-danger"></i>
+                            <h5 class="card-title fw-bold mb-3">Medical Oncology</h5>
+                            <p class="card-text">Hope and Healing for Cancer Patients. We offer advanced treatments, personalized care plans, and compassionate support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-syringe fa-3x mb-4 text-success"></i>
+                            <h5 class="card-title fw-bold mb-3">General Surgery</h5>
+                            <p class="card-text">Precision in Every Procedure. Our experienced surgeons specialize in a variety of surgical procedures, delivering care with accuracy and expertise.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-child fa-3x mb-4 text-info"></i>
+                            <h5 class="card-title fw-bold mb-3">Pediatrics</h5>
+                            <p class="card-text">Comprehensive Care for Children. Our pediatricians provide expert care for infants, children, and adolescents, ensuring their growth, development, and well-being.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-heart fa-3x mb-4 text-warning"></i>
+                            <h5 class="card-title fw-bold mb-3">Cardiology</h5>
+                            <p class="card-text">Advanced Heart Care. Our cardiology team offers state-of-the-art diagnostic and treatment options for heart-related conditions, ensuring optimal cardiovascular health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced and Specialized Services Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Advanced and Specialized Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-laptop-medical fa-3x mb-4 text-info"></i>
+                            <h5 class="card-title fw-bold mb-3">Laparoscopic Surgery</h5>
+                            <p class="card-text">Minimally Invasive, Maximum Precision. With cutting-edge technology, we ensure faster recovery and better outcomes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-baby fa-3x mb-4 text-warning"></i>
+                            <h5 class="card-title fw-bold mb-3">Obstetrics & Gynecology</h5>
+                            <p class="card-text">Comprehensive Women’s Health. From maternity care to gynecological surgeries, our specialists provide personalized care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-brain fa-3x mb-4 text-secondary"></i>
+                            <h5 class="card-title fw-bold mb-3">Neurology</h5>
+                            <p class="card-text">Expertise in Nerve and Brain Health. Our neurologists specialize in diagnosing and treating complex neurological conditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ICU & NICU Facilities Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">ICU & NICU Facilities</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-procedures fa-3x mb-4 text-primary"></i>
+                            <h5 class="card-title fw-bold mb-3">Intensive Care Units (ICU)</h5>
+                            <p class="card-text">Equipped with advanced monitoring systems and managed by expert intensivists, our ICUs provide round-the-clock critical care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-baby-carriage fa-3x mb-4 text-danger"></i>
+                            <h5 class="card-title fw-bold mb-3">Neonatal Intensive Care Unit (NICU)</h5>
+                            <p class="card-text">Providing life-saving care for premature and critically ill newborns with the best-in-class equipment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Services Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Emergency Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-ambulance fa-3x mb-4 text-success"></i>
+                            <h5 class="card-title fw-bold mb-3">24x7 Emergency Care</h5>
+                            <p class="card-text">When every second counts, our emergency team is ready to deliver expert care at any hour.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-first-aid fa-3x mb-4 text-warning"></i>
+                            <h5 class="card-title fw-bold mb-3">Ambulance Services</h5>
+                            <p class="card-text">Quick response and fully-equipped ambulances to ensure timely medical attention.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
