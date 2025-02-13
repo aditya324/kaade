@@ -518,7 +518,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <span class="copyrights">
-              Copyright &copy; <span id="copyright"></span> Kaade Hospital. Made with ❤️ by <a style="color: orange;" href="https://sunrisedigital.co.in/">sunrise Digital Media </a>
+              Copyright &copy; <span id="copyright"></span> Kaade Hospital. Made with ❤️ by <a style="color: orange;" href="https://sunrisedigital.co.in/" target="_blank">sunrise Digital Media </a>
             </span>
           </div>
           <div class="col-md-6">
