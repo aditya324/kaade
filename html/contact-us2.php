@@ -454,7 +454,7 @@
           <div class="row g-4">
             <div class="col-md-4">
               <div class="get-touch">
-                <img class="footer-image img-fluid rounded mb-3" src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=438&h=125&q=80" alt="Company Logo" />
+                <img class="footer-image img-fluid rounded mb-3" alt="Company Logo" />
                 <div class="detail">
                   <div class="get-touch">
                     <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptatem reiciendis fugiat doloribus tenetur qui impedit quam aut officiis, iste, illum ratione reprehenderit sapiente!</span>
