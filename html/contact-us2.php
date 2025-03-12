@@ -107,6 +107,7 @@
   .get-touch a:hover {
     color: #ffffff;
   }
+ 
 
   /* Footer Bottom Styles */
   .footer-bottom {
@@ -169,9 +170,7 @@
 
 
 
-  .main-footer {
-    width: 100%;
-  }
+
 </style>
 
 <body>
@@ -209,6 +208,7 @@
                 <li class="parent"><a href="about-us.html">About Us</a></li>
 
                 <li class="parent"><a href="service3.html">Service</a></li>
+                <li><a href="news-sidebar.html">Blogs</a></li>
 
                 <!-- <li class="parent"><a href="procedures.html">Procedures</a></li>
                 <li><a href="news-sidebar.html">Blogs</a></li>
@@ -245,6 +245,9 @@
             </li>
             <li>
               <a href="service3.html">Service</a>
+            </li>
+            <li>
+              <a href="news-sidebar.html">Blogs</a>
             </li>
 
             <!-- <li class=""><a href="procedures.html">Procedures</a></li>
@@ -454,7 +457,11 @@
           <div class="row g-4">
             <div class="col-md-4">
               <div class="get-touch">
+<<<<<<< HEAD
                 <img class="footer-image img-fluid rounded mb-3" alt="Company Logo" />
+=======
+                <img class="footer-image img-fluid rounded" src="images/image-438x125.png" alt="Company Logo" />
+>>>>>>> ee5f88cbf67421f8a5deb2282fa25dac0e7b0cf9
                 <div class="detail">
                   <div class="get-touch">
                     <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptatem reiciendis fugiat doloribus tenetur qui impedit quam aut officiis, iste, illum ratione reprehenderit sapiente!</span>
@@ -472,6 +479,7 @@
                     <li class="mb-2"><a href="./index2.html">Home</a></li>
                     <li class="mb-2"><a href="./about-us.html">About</a></li>
                     <li class="mb-2"><a href="./service3.html">Services</a></li>
+                    <li class="mb-2"><a href="./news-sidebar.html">Blogs</a></li>
                     <li class="mb-2"><a href="./contact-us2.php">Contact</a></li>
                   </ul>
                 </div>
@@ -514,7 +522,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <span class="copyrights">
-              Copyright &copy; <span id="copyright"></span> Kaade Hospital All rights reserved.
+              Copyright &copy; <span id="copyright"></span> Kaade Hospital. Made with ❤️ by <a style="color: orange;" href="https://sunrisedigital.co.in/" target="_blank">sunrise Digital Media </a>
             </span>
           </div>
           <div class="col-md-6">
