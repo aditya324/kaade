@@ -59,6 +59,99 @@
 
     <!--PreLoader-->
     <link href="css/loader.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      /* Footer styles */
+      .footer {
+        background-color: #434a5a;
+        color: #e0e0e0;
+        padding-top: 4rem;
+      }
+
+      .main-footer {
+        width: 100%;
+      }
+
+      .title h5 {
+        color: #ffffff;
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+      }
+
+      .text {
+        color: #a0a0a0;
+        line-height: 1.7;
+      }
+
+      .useful-links a {
+        color: #e0e0e0;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .useful-links a:hover {
+        color: #ffffff;
+      }
+
+      .get-touch i {
+        color: #a0a0a0;
+      }
+
+      .get-touch a {
+        color: #e0e0e0;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .get-touch a:hover {
+        color: #ffffff;
+      }
+
+      /* Footer Bottom Styles */
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 3rem;
+      }
+
+      .copyrights {
+        font-size: 0.9rem;
+        color: white;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+      }
+
+      .social-icon {
+        color: #a0a0a0;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+      }
+
+      .social-icon:hover {
+        color: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        .useful-links {
+          padding-top: 2rem;
+        }
+
+        .social-icons {
+          justify-content: center;
+          margin-top: 1rem;
+        }
+
+        .copyrights {
+          text-align: center;
+          display: block;
+          margin-bottom: 1rem;
+        }
+      }
+    </style>ew
   </head>
   <body>
     <div id="wrap">
@@ -88,17 +181,19 @@
                 ><img src="images/image-438x125.jpg" alt=""
               /></a>
             </div>
-    
+
             <div class="col-md-9">
               <nav class="menu-2">
                 <ul class="nav wtf-menu">
                   <li class="parent"><a href="index2.html">Home</a></li>
-    
+
                   <li class="parent"><a href="about-us.html">About Us</a></li>
-    
-                  <li class="item-select"><a href="service3.html">Service</a></li>
+
+                  <li class="item-select">
+                    <a href="service3.html">Service</a>
+                  </li>
                   <li><a href="news-sidebar.html">Blogs</a></li>
-    
+
                   <!-- <li><a href="procedures.html">Procedures</a></li>
                   <li><a href="news-sidebar.html">Blogs</a></li>
                   <li class="parent">
@@ -163,7 +258,7 @@
                   <h2>Services</h2>
                   <ul>
                     <li><a href="index2.html">Home</a></li>
-                   
+
                     <li><a>Services</a></li>
                   </ul>
                 </div>
@@ -203,12 +298,11 @@
                     alt=""
                   />
                   <div class="detail">
-                    <h5>Dental Implants</h5>
+                    <h5>Endocrinology</h5>
                     <p>
-                      Restore your smile with precision dental implant services,
-                      ensuring long-term comfort and function.
+                      Comprehensive hormonal evaluation and treatment for
+                      various endocrine disorders.
                     </p>
-                   
                   </div>
                 </div>
               </div>
@@ -220,12 +314,12 @@
                     alt=""
                   />
                   <div class="detail">
-                    <h5>Operation Theater</h5>
+                    <h5>Gastroenterology</h5>
                     <p>
-                      Modern and fully equipped operation theaters designed for
-                      safety and precision during surgeries.
+                      Gastroenterology is the branch of medicine that studies
+                      the structure, function, and diseases of the digestive
+                      system.
                     </p>
-                     
                   </div>
                 </div>
               </div>
@@ -233,12 +327,11 @@
                 <div class="serv-sec">
                   <img class="banner-img" src="images/icuservice1.jpg" alt="" />
                   <div class="detail">
-                    <h5>ICU Department</h5>
+                    <h5>Gastrointestinal Surgery</h5>
                     <p>
-                      Advanced intensive care units with cutting-edge technology
-                      and round-the-clock monitoring.
+                      Expert surgical care for digestive tract disorders using
+                      advanced, minimally invasive techniques.
                     </p>
-                     
                   </div>
                 </div>
               </div>
@@ -250,12 +343,11 @@
                     alt=""
                   />
                   <div class="detail">
-                    <h5>Heart Specialist</h5>
+                    <h5>Urology</h5>
                     <p>
-                      Expert care for all your heart-related concerns, from
-                      diagnosis to advanced treatments.
+                      State-of-the-art urological care addressing disorders of
+                      the urinary tract and male reproductive system.
                     </p>
-                     
                   </div>
                 </div>
               </div>
@@ -263,12 +355,11 @@
                 <div class="serv-sec">
                   <img class="banner-img" src="images/labservice1.jpg" alt="" />
                   <div class="detail">
-                    <h5>Laboratory Tests</h5>
+                    <h5>Paediatric Surgery</h5>
                     <p>
-                      Accurate and reliable diagnostic testing with our
-                      state-of-the-art laboratory facilities.
+                      Specialized surgical care for infants, children, and
+                      adolescents with a focus on safety and comfort.
                     </p>
-                     
                   </div>
                 </div>
               </div>
@@ -280,12 +371,11 @@
                     alt=""
                   />
                   <div class="detail">
-                    <h5>Liposuction Department</h5>
+                    <h5>Reconstructive Surgery</h5>
                     <p>
-                      Safe and effective liposuction services for body
-                      contouring and enhanced confidence.
+                      Innovative surgical techniques to repair and restore form
+                      and function following injury or disease.
                     </p>
-                     
                   </div>
                 </div>
               </div>
@@ -297,12 +387,12 @@
                     alt=""
                   />
                   <div class="detail">
-                    <h5>Baby Birth</h5>
+                    <h5>Oncology</h5>
                     <p>
-                      Comprehensive maternity services, ensuring the safety and
-                      care of both mother and baby.
+                      Expert oncology care with advanced treatments and
+                      compassionate support. Trust us for personalized cancer
+                      care and recovery.
                     </p>
-                     
                   </div>
                 </div>
               </div>
@@ -315,7 +405,78 @@
                       Specialized eye care services for a range of vision and
                       eye health issues.
                     </p>
-                     
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="serv-sec">
+                  <img class="banner-img" src="images/eyeservice1.jpg" alt="" />
+                  <div class="detail">
+                    <h5>Cancer Surgery</h5>
+                    <p>
+                      Advanced cancer surgery with expert surgeons ensuring
+                      precise treatment and better recovery outcomes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="serv-sec">
+                  <img class="banner-img" src="images/eyeservice1.jpg" alt="" />
+                  <div class="detail">
+                    <h5>Vascular Surgery</h5>
+                    <p>
+                      Expert vascular surgery for effective treatment of blood
+                      vessel disorders with advanced care and precision.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="serv-sec">
+                  <img class="banner-img" src="images/eyeservice1.jpg" alt="" />
+                  <div class="detail">
+                    <h5>Nephrology</h5>
+                    <p>
+                      Comprehensive nephrology care for kidney health, offering
+                      expert diagnosis and advanced treatment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="serv-sec">
+                  <img class="banner-img" src="images/eyeservice1.jpg" alt="" />
+                  <div class="detail">
+                    <h5>Neurology</h5>
+                    <p>
+                      Expert neurology care for brain, spine, and nerve
+                      disorders with advanced diagnosis and treatment
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="serv-sec">
+                  <img class="banner-img" src="images/eyeservice1.jpg" alt="" />
+                  <div class="detail">
+                    <h5>Neuro and Spine Surgery</h5>
+                    <p>
+                      Advanced neuro and spine surgery for precise treatment,
+                      ensuring better mobility and recovery.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="serv-sec">
+                  <img class="banner-img" src="images/eyeservice1.jpg" alt="" />
+                  <div class="detail">
+                    <h5>Plastic , Burn Surgery</h5>
+                    <p>
+                      Expert plastic and burn surgery for reconstructive,
+                      cosmetic, and trauma care with advanced techniques.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -328,194 +489,131 @@
       <!--Start Footer-->
       <footer class="footer" id="footer">
         <div class="container">
+          <!-- Main Footer Section -->
+
           <div class="row">
             <div class="col-md-12">
               <div class="emergency">
                 <i class="icon-phone5"></i>
                 <span class="text">For emergency cases</span>
                 <span class="number">1-300-400-8211</span>
-                <img src="images/emergency-divider.png" alt="" />
+                <img src="images/emergency-divider-dark.png" alt="" />
               </div>
             </div>
           </div>
-
-          <div class="main-footer">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="useful-links">
-                  <div class="title">
-                    <h5>Medical guide</h5>
-                  </div>
-
-                  <div class="detail">
-                    <ul>
-                      <li><a href="#.">Home</a></li>
-                      <li><a href="#.">About Us</a></li>
-                      <li><a href="#.">Services</a></li>
-                      <li><a href="#.">Departments</a></li>
-                      <li><a href="#.">Timetable</a></li>
-                      <li><a href="#.">Why Us</a></li>
-                      <li><a href="#.">Specilaties</a></li>
-                      <li><a href="#.">Contact Us</a></li>
-                      <li><a href="#.">Events</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="title">
-                  <h5>LATEST TWEETS</h5>
-                </div>
-
-                <div class="detail">
-                  <div class="tweets">
-                    <div class="icon">
-                      <i class="icon-yen"></i>
-                    </div>
-
-                    <div class="text">
-                      <p>
-                        <a href="#.">@Rotography</a> Please kindly use Support
-                        Forum: <a href="#.">Medical.co.uk</a>
-                      </p>
-                      <span>3 days ago</span>
-                    </div>
-                  </div>
-
-                  <div class="tweets">
-                    <div class="icon">
-                      <i class="icon-yen"></i>
-                    </div>
-
-                    <div class="text">
-                      <p>
-                        A quick launcher for WordPress dashboard
-                        <a href="#.">@Medical</a>
-                      </p>
-                      <span>about a week ago</span>
+          <div class="footer-center">
+            <div class="main-footer">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="get-touch">
+                    <img
+                      class="footer-image img-fluid rounded"
+                      src="images/image-438x125.png"
+                      alt="Company Logo"
+                    />
+                    <div class="detail">
+                      <div class="get-touch">
+                        <span class="text"
+                          >Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Libero aliquam voluptatem reiciendis fugiat
+                          doloribus tenetur qui impedit quam aut officiis, iste,
+                          illum ratione reprehenderit sapiente!</span
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-3">
-                <div class="newsletter">
-                  <div class="title">
-                    <h5>NEWSLETTER</h5>
-                  </div>
-
-                  <div class="detail">
-                    <div class="signup-text">
-                      <i class="icon-dollar"></i>
-                      <span
-                        >Sign up with your name and email to get updates fresh
-                        updates.</span
-                      >
+                <div class="col-md-4">
+                  <div class="useful-links">
+                    <div class="title">
+                      <h5>Useful Links</h5>
                     </div>
-
-                    <div class="form">
-                      <p
-                        class="subscribe_success"
-                        id="subscribe_success"
-                        style="display: none"
-                      ></p>
-                      <p
-                        class="subscribe_error"
-                        id="subscribe_error"
-                        style="display: none"
-                      ></p>
-
-                      <form
-                        name="subscribe_form"
-                        id="subscribe_form"
-                        method="post"
-                        action="#"
-                        onSubmit="return false"
-                      >
-                        <input
-                          type="text"
-                          data-delay="300"
-                          placeholder="Your Name"
-                          name="subscribe_name"
-                          id="subscribe_name"
-                          onKeyPress="removeChecks();"
-                          class="input"
-                        />
-                        <input
-                          type="text"
-                          data-delay="300"
-                          placeholder="Email Address"
-                          name="subscribe_email"
-                          id="subscribe_email"
-                          onKeyPress="removeChecks();"
-                          class="input"
-                        />
-                        <input
-                          name="Subscribe"
-                          type="submit"
-                          value="Subscribe"
-                          onClick="validateSubscription();"
-                        />
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="get-touch">
-                  <div class="title">
-                    <h5>GET IN TOUCH</h5>
-                  </div>
-
-                  <div class="detail">
-                    <div class="get-touch">
-                      <span class="text"
-                        >Medical Bibendum auctor, to consequat ipsum, nec
-                        sagittis sem</span
-                      >
-
-                      <ul>
-                        <li>
-                          <i class="icon-location"></i>
-                          <span
-                            >Medical Ltd, Manhattan 1258, New York, USA
-                            Lahore</span
-                          >
+                    <div class="detail">
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./index2.html">Home</a></li>
+                        <li class="mb-2">
+                          <a href="./about-us.html">About</a>
                         </li>
-                        <li>
-                          <i class="icon-phone4"></i>
-                          <span>(+1) 234 567 8901</span>
+                        <li class="mb-2">
+                          <a href="./service3.html">Services</a>
                         </li>
-                        <li>
-                          <a href="#."
-                            ><i class="icon-dollar"></i>
-                            <span>hello@medical-guide.com</span></a
-                          >
+                        <li class="mb-2">
+                          <a href="./news-sidebar.html">Blogs</a>
+                        </li>
+                        <li class="mb-2">
+                          <a href="./contact-us2.php">Contact</a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
+                <div class="col-md-4">
+                  <div class="get-touch">
+                    <div class="title">
+                      <h5>GET IN TOUCH</h5>
+                    </div>
+                    <div class="detail">
+                      <div class="get-touch">
+                        <span class="text"
+                          >Medical Bibendum auctor, to consequat ipsum, nec
+                          sagittis sem</span
+                        >
+                        <ul class="list-unstyled mt-4">
+                          <li class="d-flex align-items-start gap-3 mb-3">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span
+                              >West Of Chord Road, Manjunatha Nagar,
+                              Bangalore</span
+                            >
+                          </li>
+                          <li class="d-flex align-items-start gap-3 mb-3">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>+91 080 23500244 / +91 080 23500257</span>
+                          </li>
+                          <li class="d-flex align-items-start gap-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <a href="mailto:info@nandanahealth.com">
+                              <span>info@nandanahealth.com</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="row">
+          <!-- Footer Bottom Section -->
+          <div class="py-3" id="bottom">
+            <div class="row align-items-center">
               <div class="col-md-6">
-                <span class="copyrights"
-                  >Copyright &copy; 2015 Medical Guide. All right
-                  reserved.</span
-                >
+                <span class="copyrights">
+                  Copyright &copy; <span id="copyright"></span> Kaade Hospital.
+                  Made with ❤️ by
+                  <a
+                    style="color: orange"
+                    href="https://sunrisedigital.co.in/"
+                    target="_blank"
+                    >sunrise Digital Media
+                  </a>
+                </span>
               </div>
-
               <div class="col-md-6">
-                <div class="social-icons">
-                  <a href="#." class="fb"><i class="icon-euro"></i></a>
-                  <a href="#." class="tw"><i class="icon-yen"></i></a>
-                  <a href="#." class="gp"><i class="icon-google-plus"></i></a>
-                  <a href="#." class="vimeo"><i class="icon-vimeo4"></i></a>
+                <div class="social-icons text-md-end">
+                  <a href="#" class="social-icon"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fab fa-google-plus-g"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fab fa-vimeo-v"></i
+                  ></a>
                 </div>
               </div>
             </div>

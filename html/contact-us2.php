@@ -414,9 +414,9 @@
                   <div class="detail">
                     <span><b>Phone:</b>+91 080 23500244 / +91 080 23500257</span>
                     <span><b>Email:</b>
-                      <a href="">info@nandanahealth.com</a></span>
+                      <!-- <a href="">info@nandanahealth.com</a></span> -->
                     <span><b>Web:</b>
-                      <a href="#.">www.nandanahealth.com</a></span>
+                      <!-- <a href="#.">www.nandanahealth.com</a></span> -->
                     <span><b>Address:</b> No.320/C & 321/A, 1st Stage, 2nd Phase, West Of Chord Road, Manjunatha Nagar, Bangalore - 560010
                     </span>
                   </div>
@@ -457,11 +457,7 @@
           <div class="row g-4">
             <div class="col-md-4">
               <div class="get-touch">
-<<<<<<< HEAD
-                <img class="footer-image img-fluid rounded mb-3" alt="Company Logo" />
-=======
                 <img class="footer-image img-fluid rounded" src="images/image-438x125.png" alt="Company Logo" />
->>>>>>> ee5f88cbf67421f8a5deb2282fa25dac0e7b0cf9
                 <div class="detail">
                   <div class="get-touch">
                     <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptatem reiciendis fugiat doloribus tenetur qui impedit quam aut officiis, iste, illum ratione reprehenderit sapiente!</span>
