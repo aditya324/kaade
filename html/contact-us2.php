@@ -207,7 +207,7 @@
 
                 <li class="parent"><a href="about-us.html">About Us</a></li>
 
-                <li class="parent"><a href="service3.html">Service</a></li>
+                <li class="parent"><a href="service3.html">Specialities</a></li>
                 <li><a href="news-sidebar.html">Blogs</a></li>
 
                 <!-- <li class="parent"><a href="procedures.html">Procedures</a></li>
@@ -244,7 +244,7 @@
               <a href="about-us.html">About</a>
             </li>
             <li>
-              <a href="service3.html">Service</a>
+              <a href="service3.html">Specialities</a>
             </li>
             <li>
               <a href="news-sidebar.html">Blogs</a>
@@ -306,7 +306,7 @@
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
-              <div class="get-directions">
+              <!-- <div class="get-directions">
                 <form
                   action="http://maps.google.com/maps"
                   method="get"
@@ -324,7 +324,7 @@
                     value="Get directions"
                     class="direction-btn" />
                 </form>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -412,20 +412,18 @@
 
                 <div class="get-in-touch">
                   <div class="detail">
-                    <span><b>Phone:</b>+91 080 23500244 / +91 080 23500257</span>
-                    <span><b>Email:</b>
-                      <!-- <a href="">info@nandanahealth.com</a></span> -->
-                    <span><b>Web:</b>
-                      <!-- <a href="#.">www.nandanahealth.com</a></span> -->
+                    <span><b>Phone:</b>+91 080 23500244 / 99022 53636</span>
+                    <span><b>Email: </b>
+                    <a href="mailto:kaadehospitalblr@gmail.com">kaadehospitalblr@gmail.com</a></span>
+                    
                     <span><b>Address:</b> No.320/C & 321/A, 1st Stage, 2nd Phase, West Of Chord Road, Manjunatha Nagar, Bangalore - 560010
                     </span>
                   </div>
 
                   <div class="social-icons">
-                    <a href="#." class="fb"><i class="icon-euro"></i></a>
-                    <a href="#." class="tw"><i class="icon-yen"></i></a>
-                    <a href="#." class="gp"><i class="icon-google-plus"></i></a>
-                    <a href="#." class="vimeo"><i class="icon-vimeo4"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61571028887970" target="_blank" class="fb"><i class="icon-euro"></i></a>
+                    <a href="https://www.instagram.com/kaadehospital/" target="_blank" class="gp"><i class="icon-instagram2"></i></a>
+                    
                   </div>
                 </div>
               </div>
@@ -439,100 +437,93 @@
 
   <!--Start Footer-->
   <footer class="footer" id="footer">
-    <div class="container">
-      <!-- Main Footer Section -->
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="emergency">
-            <i class="icon-phone5"></i>
-            <span class="text">For emergency cases</span>
-            <span class="number">1-300-400-8211</span>
-            <img src="images/emergency-divider-dark.png" alt="" />
+        <div class="container">
+          <!-- Main Footer Section -->
+    
+          <div class="row">
+            <div class="col-md-12">
+              <div class="emergency">
+                <i class="icon-phone5"></i>
+                <span class="text">For emergency cases</span>
+                <span class="number">080 610 4444</span>
+                <img src="images/emergency-divider-dark.png" alt="" />
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="footer-center">
-        <div class="main-footer">
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="get-touch">
-                <img class="footer-image img-fluid rounded" src="images/image-438x125.png" alt="Company Logo" />
-                <div class="detail">
+          <div class="footer-center">
+            <div class="main-footer">
+              <div class="row g-4">
+                <div class="col-md-4">
                   <div class="get-touch">
-                    <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptatem reiciendis fugiat doloribus tenetur qui impedit quam aut officiis, iste, illum ratione reprehenderit sapiente!</span>
+                    <img class="footer-image img-fluid rounded" src="images/logootransparent.png" alt="Company Logo" />
+                    <div class="detail">
+                      <div class="get-touch">
+                        <span class="text">Kaade Hospital today stands as a testimony to a commitment of Competent and Affordable medical care thus giving The Best Outcome, for Everyone, Everytime</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="useful-links">
+                    <div class="title">
+                      <h5>Useful Links</h5>
+                    </div>
+                    <div class="detail">
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./index2.html">Home</a></li>
+                        <li class="mb-2"><a href="./about-us.html">About</a></li>
+                        <li class="mb-2"><a href="./service3.html">Services</a></li>
+                        <li class="mb-2"><a href="./news-sidebar.html">Blogs</a></li>
+                        <li class="mb-2"><a href="./contact-us2.php">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="get-touch">
+                    <div class="title">
+                      <h5>GET IN TOUCH</h5>
+                    </div>
+                    <div class="detail">
+                      <div class="get-touch">
+                        <span class="text">Medical Bibendum auctor, to consequat ipsum, nec sagittis sem</span>
+                        <ul class="list-unstyled mt-4">
+                          <li class="d-flex align-items-start gap-3 mb-3">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
+                          </li>
+                          <li class="d-flex align-items-start gap-3 mb-3">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>+91 080 23500244 /99022 53636</span>
+                          </li>
+                          <li class="d-flex align-items-start gap-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <a href="mailto:kaadehospitalblr@gmail.com">
+                              <span>kaadehospitalblr@gmail.com</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="useful-links">
-                <div class="title">
-                  <h5>Useful Links</h5>
-                </div>
-                <div class="detail">
-                  <ul class="list-unstyled">
-                    <li class="mb-2"><a href="./index2.html">Home</a></li>
-                    <li class="mb-2"><a href="./about-us.html">About</a></li>
-                    <li class="mb-2"><a href="./service3.html">Services</a></li>
-                    <li class="mb-2"><a href="./news-sidebar.html">Blogs</a></li>
-                    <li class="mb-2"><a href="./contact-us2.php">Contact</a></li>
-                  </ul>
-                </div>
+          </div>
+    
+          <!-- Footer Bottom Section -->
+          <div class=" py-3" id="bottom">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <span class="copyrights">
+                  Copyright &copy; <span id="copyright"></span> Kaade Hospital. Made with ❤️ by <a style="color: orange;" href="https://sunrisedigital.co.in/" target="_blank">sunrise Digital Media </a>
+                </span>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="get-touch">
-                <div class="title">
-                  <h5>GET IN TOUCH</h5>
-                </div>
-                <div class="detail">
-                  <div class="get-touch">
-                    <span class="text">Medical Bibendum auctor, to consequat ipsum, nec sagittis sem</span>
-                    <ul class="list-unstyled mt-4">
-                      <li class="d-flex align-items-start gap-3 mb-3">
-                        <i class="fas fa-map-marker-alt mt-1"></i>
-                        <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
-                      </li>
-                      <li class="d-flex align-items-start gap-3 mb-3">
-                        <i class="fas fa-phone mt-1"></i>
-                        <span>+91 080 23500244 / +91 080 23500257</span>
-                      </li>
-                      <li class="d-flex align-items-start gap-3">
-                        <i class="fas fa-envelope mt-1"></i>
-                        <a href="mailto:info@nandanahealth.com">
-                          <span>info@nandanahealth.com</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Footer Bottom Section -->
-      <div class=" py-3" id="bottom">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <span class="copyrights">
-              Copyright &copy; <span id="copyright"></span> Kaade Hospital. Made with ❤️ by <a style="color: orange;" href="https://sunrisedigital.co.in/" target="_blank">sunrise Digital Media </a>
-            </span>
-          </div>
-          <div class="col-md-6">
-            <div class="social-icons text-md-end">
-              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-vimeo-v"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+      </footer>
 
   <!--End Footer-->
   </div>
