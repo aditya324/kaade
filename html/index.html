@@ -10,7 +10,7 @@
     />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <link rel="icon" type="image/png" href="images/favicon-medical.png" />
+    <link rel="icon" type="image/png" href="images/image-16x16.jpg" />
 
     <!--main file-->
     <link href="css/medical-guide.css" rel="stylesheet" type="text/css" />
@@ -36,6 +36,11 @@
     <!--Dropmenu-->
     <link href="css/dropmenu.css" rel="stylesheet" type="text/css" />
 
+    <link
+      rel="stylesheet"
+      href="fonts/medical-guide-icons.css"
+      type="text/css"
+    />
     <!--Sticky Header-->
     <link href="css/sticky-header.css" rel="stylesheet" type="text/css" />
 
@@ -59,7 +64,152 @@
 
     <!--PreLoader-->
     <link href="css/loader.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
   </head>
+
+  <style>
+    .read-more-link {
+    color: #02ADC6; /* Your specified color */
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+
+   
+    transition: color 0.3s ease;
+  }
+
+  .read-more-link i {
+    margin-left: 8px;
+    margin-top: 25px;
+    transition: margin-left 0.3s ease;
+  }
+
+  .read-more-link:hover {
+    color: #0199ad; 
+  }
+
+  .read-more-link:hover i {
+    margin-left: 12px;
+  }
+  </style>
+
+
+<style>
+  /* Footer styles */
+  .footer {
+    background-color: #434A5A;
+    color: #e0e0e0;
+    padding-top: 4rem;
+  }
+
+  .main-footer {
+    width: 100%;
+  }
+
+  .title h5 {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  .text {
+    color: #a0a0a0;
+    line-height: 1.7;
+  }
+
+  .useful-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .useful-links a:hover {
+    color: #ffffff;
+  }
+
+  .get-touch i {
+    color: #a0a0a0;
+  }
+
+  .get-touch a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .get-touch a:hover {
+    color: #ffffff;
+  }
+ 
+
+  /* Footer Bottom Styles */
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 3rem;
+  }
+
+  .copyrights {
+    font-size: 0.9rem;
+    color: white;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+
+  .social-icon {
+    color: #a0a0a0;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+
+
+
+
+
+
+  .social-icon:hover {
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    .useful-links {
+      padding-top: 2rem;
+    }
+
+    .social-icons {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .copyrights {
+      text-align: center;
+      display: block;
+      margin-bottom: 1rem;
+
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
   <body>
     <div id="wrap">
       <!--Start PreLoader-->
@@ -74,161 +224,170 @@
       </div>
       <!--End PreLoader-->
 
-      <!--Start Top Bar-->
-      <div class="top-bar">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <span>MedicalGuide Come to Expect the Best in Town.</span>
-            </div>
+      <!--Start Header-->
 
-            <div class="col-md-7">
-              <div class="get-touch">
-                <ul>
-                  <li>
-                    <a><i class="icon-phone4"></i> tel: +918047110615</a>
-                  </li>
-                  <li>
-                    <a href="#."
-                      ><i class="icon-mail"></i> info@kaadehospitals.com</a
-                    >
-                  </li>
-                </ul>
+      <!-- header copy for refreence here -->
 
-                <ul class="social-icons">
-                  <li>
-                    <a href="#." class="fb"><i class="icon-euro"></i> </a>
-                  </li>
-                  <li>
-                    <a href="#." class="tw"><i class="icon-yen"></i> </a>
-                  </li>
-                  <li>
-                    <a href="#." class="gp"
-                      ><i class="icon-caddieshoppingstreamline"></i>
-                    </a>
-                  </li>
-                </ul>
+      <!-- <div id="header-2">
+        <header class="header header2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <a href="index.html" class="logo"
+                ><img src="images/LOGO final.png" alt="" style="height: 70px"
+              /></a>
+              </div>
+              
+              <div class="col-md-9">
+                <nav class="menu-2">
+                  <ul class="nav wtf-menu">
+                    <li class="item-select parent">
+                      <a href="#.">Home</a>
+                      <ul class="submenu">
+                        <li><a href="index.html">Home Page 1</a></li>
+                        <li class="select-menu">
+                          <a href="index2.html">Home Page 2</a>
+                        </li>
+                        <li><a href="index3.html">Home Page 3</a></li>
+                        <li><a href="index4.html">Home Page 4</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="parent">
+                      <a href="#.">About Us</a>
+                      <ul class="submenu">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="about-us2.html">About Us 2</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="parent">
+                      <a href="#.">Pages</a>
+                      <ul class="submenu">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services2.html">Services Two</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li>
+                          <a href="patient-and-family.html"
+                            >Patient and Family</a
+                          >
+                        </li>
+                        <li>
+                          <a href="team-members.html">Team Members One</a>
+                        </li>
+                        <li>
+                          <a href="team-members2.html">Team Members Two</a>
+                        </li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="tables.html">Pricing tabels</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="procedures.html">Procedures</a></li>
+
+                    <li class="parent">
+                      <a href="#.">Gallery</a>
+
+                      <ul class="submenu">
+                        <li class="parent">
+                          <a href="#">Simple Gallery</a>
+                          <i class="icon-chevron-small-right"></i>
+                          <ul class="submenu">
+                            <li>
+                              <a href="gallery-simple-two.html">Columns Two</a>
+                            </li>
+                            <li>
+                              <a href="gallery-simple-three.html"
+                                >Columns Three</a
+                              >
+                            </li>
+                            <li>
+                              <a href="gallery-simple-four.html"
+                                >Columns Four</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li class="parent">
+                          <a href="#">Nimble Gallery</a>
+                          <i class="icon-chevron-small-right"></i>
+                          <ul class="submenu">
+                            <li>
+                              <a href="gallery-nimble-two.html">Columns Two</a>
+                            </li>
+                            <li>
+                              <a href="gallery-nimble-three.html"
+                                >Columns Three</a
+                              >
+                            </li>
+                            <li>
+                              <a href="gallery-nimble-four.html"
+                                >Columns Four</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="parent">
+                      <a href="#.">News</a>
+                      <ul class="submenu">
+                        <li><a href="news-sidebar.html">Sidebar</a></li>
+                        <li><a href="news-text.html">Text-Based</a></li>
+                        <li><a href="news-single.html">Single Post</a></li>
+                        <li><a href="news-double.html">Double Post</a></li>
+                        <li><a href="news-masonary.html">Masonary</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="shop.html">Shop</a></li>
+
+                    <li class="parent">
+                      <a href="#.">Contact Us</a>
+                      <ul class="submenu">
+                        <li><a href="contact-us.html">Contact-Us One</a></li>
+                        <li><a href="contact-us2.php">Contact-Us Two</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!--Top Bar End-->
-
-      <!--Start Header-->
+        </header>
+      </div> -->
 
       <header class="header">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
               <a href="index.html" class="logo"
-                ><img src="images/LOGO final.png" alt="" style="height: 90px"
+                ><img src="images/logoo.png" alt=""
               /></a>
             </div>
-
+    
             <div class="col-md-9">
               <nav class="menu-2">
                 <ul class="nav wtf-menu">
-                  <li class="item-select parent">
-                    <a href="#.">Home</a>
-                    <ul class="submenu">
-                      <li class="select-menu">
-                        <a href="index.html">Home Page 1</a>
-                      </li>
-                      <li><a href="index2.html">Home Page 2</a></li>
-                      <li><a href="index3.html">Home Page 3</a></li>
-                      <li><a href="index4.html">Home Page 4</a></li>
-                    </ul>
-                  </li>
+                  <li class="item-select"><a href="index.html">Home</a></li>
+    
+                  <li class="parent"><a href="about-us.html">About Us</a></li>
+    
+                  <li class="parent"><a href="service3.html">Specialities</a></li>
 
+                  <li class="parent"><a href="news-sidebar.html">Blogs</a></li>
+    
+                  <!-- <li><a href="procedures.html">Procedures</a></li>
+                  <li><a href="news-sidebar.html">Blogs</a></li>
                   <li class="parent">
-                    <a href="#.">About Us</a>
-                    <ul class="submenu">
-                      <li><a href="about-us.html">About Us</a></li>
-                      <li><a href="about-us2.html">About Us 2</a></li>
-                    </ul>
-                  </li>
-
+                    <a href="gallery-nimble-three.html">Gallery</a>
+                  </li> -->
+    
                   <li class="parent">
-                    <a href="#.">Pages</a>
-                    <ul class="submenu">
-                      <li><a href="services.html">Services</a></li>
-                      <li><a href="services2.html">Services Two</a></li>
-                      <li><a href="appointment.html">Appointment</a></li>
-                      <li><a href="departments.html">Departments</a></li>
-                      <li>
-                        <a href="patient-and-family.html">Patient and Family</a>
-                      </li>
-                      <li><a href="team-members.html">Team Members One</a></li>
-                      <li><a href="team-members2.html">Team Members Two</a></li>
-                      <li><a href="research.html">Research</a></li>
-                      <li><a href="tables.html">Pricing tabels</a></li>
-                    </ul>
-                  </li>
-
-                  <li><a href="procedures.html">Procedures</a></li>
-
-                  <li class="parent">
-                    <a href="#.">Gallery</a>
-
-                    <ul class="submenu">
-                      <li class="parent">
-                        <a href="#">Simple Gallery</a>
-                        <i class="icon-chevron-small-right"></i>
-                        <ul class="submenu">
-                          <li>
-                            <a href="gallery-simple-two.html">Columns Two</a>
-                          </li>
-                          <li>
-                            <a href="gallery-simple-three.html"
-                              >Columns Three</a
-                            >
-                          </li>
-                          <li>
-                            <a href="gallery-simple-four.html">Columns Four</a>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li class="parent">
-                        <a href="#">Nimble Gallery</a>
-                        <i class="icon-chevron-small-right"></i>
-                        <ul class="submenu">
-                          <li>
-                            <a href="gallery-nimble-two.html">Columns Two</a>
-                          </li>
-                          <li>
-                            <a href="gallery-nimble-three.html"
-                              >Columns Three</a
-                            >
-                          </li>
-                          <li>
-                            <a href="gallery-nimble-four.html">Columns Four</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="parent">
-                    <a href="#.">News</a>
-                    <ul class="submenu">
-                      <li><a href="news-sidebar.html">Sidebar</a></li>
-                      <li><a href="news-text.html">Text-Based</a></li>
-                      <li><a href="news-single.html">Single Post</a></li>
-                      <li><a href="news-double.html">Double Post</a></li>
-                      <li><a href="news-masonary.html">Masonary</a></li>
-                    </ul>
-                  </li>
-
-                  <li><a href="shop.html">Shop</a></li>
-
-                  <li class="parent">
-                    <a href="#.">Contact Us</a>
-                    <ul class="submenu">
-                      <li><a href="contact-us.html">Contact-Us One</a></li>
-                      <li><a href="contact-us2.html">Contact-Us Two</a></li>
-                    </ul>
+                    <a href="contact-us2.php">Contact Us</a>
                   </li>
                 </ul>
               </nav>
@@ -236,6 +395,7 @@
           </div>
         </div>
       </header>
+
       <!--End Header-->
 
       <!-- Mobile Menu Start -->
@@ -248,91 +408,23 @@
           <nav id="menu">
             <ul>
               <li class="select">
-                <a href="#.">Home</a>
-                <ul>
-                  <li class="select"><a href="index.html">Home Page 1</a></li>
-                  <li><a href="index2.html">Home Page 2</a></li>
-                  <li><a href="index3.html">Home Page 3</a></li>
-                  <li><a href="index4.html">Home Page 4</a></li>
-                </ul>
+                <a href="index2.html">Home</a>
+              </li>
+              <li class="">
+                <a href="about-us.html">About</a>
               </li>
               <li>
-                <a href="#.">About us</a>
-                <ul>
-                  <li><a href="about-us.html">About Us</a></li>
-                  <li><a href="about-us2.html">About Us 2</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#.">Pages</a>
-                <ul>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="services2.html">Services Two</a></li>
-                  <li><a href="appointment.html">Appointment</a></li>
-                  <li><a href="departments.html">Departments</a></li>
-                  <li>
-                    <a href="patient-and-family.html">Patient and Family</a>
-                  </li>
-                  <li><a href="team-members.html">Team Members One</a></li>
-                  <li><a href="team-members2.html">Team Members Two</a></li>
-                  <li><a href="research.html">Research</a></li>
-                  <li><a href="tables.html">Pricing tabels</a></li>
-                </ul>
+                <a href="service3.html">Service</a>
               </li>
 
-              <li><a href="procedures.html">Procedures</a></li>
-
+             
+              <li><a href="news-sidebar.html">Blogs</a></li>
               <li>
-                <a href="#.">Gallery</a>
-
-                <ul>
-                  <li>
-                    <a href="#.">Simple Gallery</a>
-                    <ul>
-                      <li><a href="gallery-simple-two.html">Columns Two</a></li>
-                      <li>
-                        <a href="gallery-simple-three.html">Columns Three</a>
-                      </li>
-                      <li>
-                        <a href="gallery-simple-four.html">Columns Four</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <a href="#.">Nimble Gallery</a>
-                    <ul>
-                      <li><a href="gallery-nimble-two.html">Columns Two</a></li>
-                      <li>
-                        <a href="gallery-nimble-three.html">Columns Three</a>
-                      </li>
-                      <li>
-                        <a href="gallery-nimble-four.html">Columns Four</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+                <!-- <a href="gallery-nimble-three.html">Gallery</a> -->
               </li>
 
               <li>
-                <a href="#.">News Posts</a>
-                <ul>
-                  <li><a href="news-sidebar.html">Sidebar</a></li>
-                  <li><a href="news-text.html">Text-Based</a></li>
-                  <li><a href="news-single.html">Single Post</a></li>
-                  <li><a href="news-double.html">Double Post</a></li>
-                  <li><a href="news-masonary.html">Masonary</a></li>
-                </ul>
-              </li>
-
-              <li><a href="shop.html">Shop</a></li>
-
-              <li>
-                <a href="#.">Contact Us</a>
-                <ul>
-                  <li><a href="contact-us.html">Contact-Us One</a></li>
-                  <li><a href="contact-us2.html">Contact-Us Two</a></li>
-                </ul>
+                <a href="contact-us2.php">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -340,7 +432,7 @@
       </div>
       <!-- Mobile Menu End -->
 
-      <div class="container">
+      <!-- <div class="container">
         <div class="time-table-sec">
           <ul id="accordion2" class="accordion2">
             <li>
@@ -368,7 +460,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
       <!--Start Banner-->
 
@@ -384,145 +476,60 @@
               data-saveperformance="on"
               data-title="Intro Slide"
             >
+              <!-- MAIN IMAGE -->
               <img
-                src="images/slides/top-view-frame-with-stethoscope.jpg"
+                src="images/slides/kaadeslider1.jpg"
                 alt=""
                 data-bgposition="center top"
                 data-bgfit="cover"
                 data-bgrepeat="no-repeat"
               />
+              <!-- LAYERS -->
 
               <div
-                class="tp-caption customin customout rs-parallaxlevel-0"
-                data-x="right"
-                data-y="188"
-                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                data-speed="700"
-                data-start="1200"
-                data-easing="Power3.easeInOut"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                style="z-index: 4"
-              >
-                <img
-                  style="border-bottom: solid 6px #02adc6"
-                  src="images/slides/transprint-bg.png"
-                  alt=""
-                />
-              </div>
-
-              <div
-                class="tp-caption title-bold tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="670"
-                data-y="218"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
+                class="tp-caption black_thin_34 customin tp-resizeme rs-parallaxlevel-0"
+                data-x="center"
+                data-y="250"
+                data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="500"
+                data-start="1400"
+                data-easing="Back.easeOut"
                 data-splitin="none"
                 data-splitout="none"
                 data-elementdelay="0.1"
                 data-endelementdelay="0.1"
-                data-endspeed="300"
                 style="
-                  z-index: 5;
+                  z-index: 10;
                   max-width: auto;
                   max-height: auto;
+                  font-size: 52px;
                   white-space: nowrap;
                 "
               >
-                Medical care
+              Your Health
               </div>
 
               <div
-                class="tp-caption small-title tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="670"
-                data-y="255"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
+                class="tp-caption black_thin_34 black_thin_34_bold customin tp-resizeme rs-parallaxlevel-0"
+                data-x="center"
+                data-y="340"
+                data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="500"
+                data-start="1400"
+                data-easing="Back.easeOut"
                 data-splitin="none"
                 data-splitout="none"
                 data-elementdelay="0.1"
                 data-endelementdelay="0.1"
-                data-endspeed="300"
                 style="
-                  z-index: 5;
+                  z-index: 10;
                   max-width: auto;
                   max-height: auto;
                   white-space: nowrap;
+                  font-size: 52px;
                 "
               >
-                Health care SOLUTION
-              </div>
-
-              <div
-                class="tp-caption paragraph tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="670"
-                data-y="325"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.05"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="
-                  z-index: 9;
-                  max-width: auto;
-                  max-height: auto;
-                  white-space: nowrap;
-                "
-              >
-                <div style="text-align: left">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  <br />do eiusmod tempor incididunt ut labore
-                </div>
-              </div>
-
-              <div
-                class="tp-caption banner-button tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="670"
-                data-y="402"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.05"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="
-                  z-index: 9;
-                  max-width: auto;
-                  max-height: auto;
-                  white-space: nowrap;
-                  border-radius: 5px;
-                "
-              >
-                <div
-                  style="
-                    text-align: left;
-                    background: #525866;
-                    border-radius: 5px;
-                  "
-                >
-                  <a
-                    href="services2.html"
-                    class="read-more"
-                    style="
-                      line-height: initial;
-                      color: #fff;
-                      text-transform: uppercase;
-                      font-weight: 500;
-                      padding: 12px 36px;
-                      display: inline-block;
-                      font-size: 18px;
-                    "
-                    >read more</a
-                  >
-                </div>
+              Our Priority
               </div>
             </li>
 
@@ -533,145 +540,60 @@
               data-saveperformance="on"
               data-title="Intro Slide"
             >
+              <!-- MAIN IMAGE -->
               <img
-                src="images/slides/expressive-young-woman-posing-studio.jpg"
+                src="images/slides/kaadeslider2.jpg"
                 alt=""
                 data-bgposition="center top"
                 data-bgfit="cover"
                 data-bgrepeat="no-repeat"
               />
+              <!-- LAYERS -->
 
               <div
-                class="tp-caption customin customout rs-parallaxlevel-0"
-                data-x="left"
-                data-y="188"
-                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                data-speed="700"
-                data-start="1200"
-                data-easing="Power3.easeInOut"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                style="z-index: 4"
-              >
-                <img
-                  style="border-bottom: solid 6px #02adc6"
-                  src="images/slides/transprint-bg.png"
-                  alt=""
-                />
-              </div>
-
-              <div
-                class="tp-caption title-bold tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="30"
-                data-y="218"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
+                class="tp-caption black_thin_34 customin tp-resizeme rs-parallaxlevel-0"
+                data-x="0"
+                data-y="250"
+                data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="500"
+                data-start="1400"
+                data-easing="Back.easeOut"
                 data-splitin="none"
                 data-splitout="none"
                 data-elementdelay="0.1"
                 data-endelementdelay="0.1"
-                data-endspeed="300"
                 style="
-                  z-index: 5;
+                  z-index: 10;
                   max-width: auto;
                   max-height: auto;
                   white-space: nowrap;
+                  font-size: 52px;
                 "
               >
-                Family Plans
+              Compassionate Care
               </div>
 
               <div
-                class="tp-caption small-title tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="30"
-                data-y="255"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
+                class="tp-caption black_thin_34 black_thin_34_bold customin tp-resizeme rs-parallaxlevel-0"
+                data-x="0"
+                data-y="340"
+                data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="500"
+                data-start="1400"
+                data-easing="Back.easeOut"
                 data-splitin="none"
                 data-splitout="none"
                 data-elementdelay="0.1"
                 data-endelementdelay="0.1"
-                data-endspeed="300"
                 style="
-                  z-index: 5;
+                  z-index: 10;
                   max-width: auto;
                   max-height: auto;
                   white-space: nowrap;
+                  font-size: 52px;
                 "
               >
-                affordable solutions
-              </div>
-
-              <div
-                class="tp-caption paragraph tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="30"
-                data-y="325"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.05"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="
-                  z-index: 9;
-                  max-width: auto;
-                  max-height: auto;
-                  white-space: nowrap;
-                "
-              >
-                <div style="text-align: left">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  <br />do eiusmod tempor incididunt ut labore
-                </div>
-              </div>
-
-              <div
-                class="tp-caption banner-button tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="30"
-                data-y="402"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.05"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="
-                  z-index: 9;
-                  max-width: auto;
-                  max-height: auto;
-                  white-space: nowrap;
-                  border-radius: 5px;
-                "
-              >
-                <div
-                  style="
-                    text-align: left;
-                    background: #525866;
-                    border-radius: 5px;
-                  "
-                >
-                  <a
-                    href="patient-and-family.html"
-                    class="read-more"
-                    style="
-                      line-height: initial;
-                      color: #fff;
-                      text-transform: uppercase;
-                      font-weight: 500;
-                      padding: 12px 36px;
-                      display: inline-block;
-                      font-size: 18px;
-                    "
-                    >read more</a
-                  >
-                </div>
+              Advanced Medicine
               </div>
             </li>
 
@@ -682,145 +604,124 @@
               data-saveperformance="on"
               data-title="Intro Slide"
             >
+              <!-- MAIN IMAGE -->
               <img
-                src="images/slides/health-still-life-with-copy-space.jpg"
+                src="images/slides/kaadeslider33.jpg"
+                alt=""
+                data-bgposition="center"
+                data-bgfit="cover"
+                data-bgrepeat="no-repeat"
+              />
+              <!-- LAYERS -->
+
+              <div
+                class="tp-caption black_thin_34 customin tp-resizeme rs-parallaxlevel-0"
+                data-x="right"
+                data-y="250"
+                data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="500"
+                data-start="1400"
+                data-easing="Back.easeOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.1"
+                data-endelementdelay="0.1"
+                style="
+                  z-index: 10;
+                  max-width: auto;
+                  max-height: auto;
+                  white-space: nowrap;
+                  font-size: 52px;
+                "
+              >
+              Dedicated to Excellence
+              </div>
+
+              <div
+                class="tp-caption black_thin_34 black_thin_34_bold customin tp-resizeme rs-parallaxlevel-0"
+                data-x="right"
+                data-y="340"
+                data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="500"
+                data-start="1400"
+                data-easing="Back.easeOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.1"
+                data-endelementdelay="0.1"
+                style="
+                  z-index: 10;
+                  max-width: auto;
+                  max-height: auto;
+                  white-space: nowrap;
+                  font-size: 52px;
+                "
+              >
+              in Healthcare
+              </div>
+            </li>
+
+            <li
+              data-transition="fade"
+              data-slotamount="7"
+              data-masterspeed="500"
+              data-saveperformance="on"
+              data-title="Intro Slide"
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="images/kaadeslider5.jpg"
                 alt=""
                 data-bgposition="center top"
                 data-bgfit="cover"
                 data-bgrepeat="no-repeat"
               />
+              <!-- LAYERS -->
 
               <div
-                class="tp-caption customin customout rs-parallaxlevel-0"
-                data-x="right"
-                data-y="188"
-                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                data-speed="700"
-                data-start="1200"
-                data-easing="Power3.easeInOut"
-                data-elementdelay="0.1"
-                data-endelementdelay="0.1"
-                style="z-index: 4"
-              >
-                <img
-                  style="border-bottom: solid 6px #02adc6"
-                  src="images/slides/transprint-bg.png"
-                  alt=""
-                />
-              </div>
-
-              <div
-                class="tp-caption title-bold tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="670"
-                data-y="218"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
+                class="tp-caption black_thin_34 customin tp-resizeme rs-parallaxlevel-0"
+                data-x="center"
+                data-y="250"
+                data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="500"
+                data-start="1400"
+                data-easing="Back.easeOut"
                 data-splitin="none"
                 data-splitout="none"
                 data-elementdelay="0.1"
                 data-endelementdelay="0.1"
-                data-endspeed="300"
                 style="
-                  z-index: 5;
+                  z-index: 10;
                   max-width: auto;
                   max-height: auto;
                   white-space: nowrap;
+                  font-size: 52px;
                 "
               >
-                Research
+              Empowering You to
               </div>
 
               <div
-                class="tp-caption small-title tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="670"
-                data-y="255"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
+                class="tp-caption black_thin_34 black_thin_34_bold customin tp-resizeme rs-parallaxlevel-0"
+                data-x="center"
+                data-y="340"
+                data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                data-speed="500"
+                data-start="1400"
+                data-easing="Back.easeOut"
                 data-splitin="none"
                 data-splitout="none"
                 data-elementdelay="0.1"
                 data-endelementdelay="0.1"
-                data-endspeed="300"
                 style="
-                  z-index: 5;
+                  z-index: 10;
                   max-width: auto;
                   max-height: auto;
                   white-space: nowrap;
+                  font-size: 52px;
                 "
               >
-                cancer researchers honored
-              </div>
-
-              <div
-                class="tp-caption paragraph tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="670"
-                data-y="325"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.05"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="
-                  z-index: 9;
-                  max-width: auto;
-                  max-height: auto;
-                  white-space: nowrap;
-                "
-              >
-                <div style="text-align: left">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  <br />do eiusmod tempor incididunt ut labore
-                </div>
-              </div>
-
-              <div
-                class="tp-caption banner-button tp-resizeme rs-parallaxlevel-0 fade start"
-                data-x="670"
-                data-y="402"
-                data-speed="1000"
-                data-start="1800"
-                data-easing="Power3.easeInOut"
-                data-splitin="none"
-                data-splitout="none"
-                data-elementdelay="0.05"
-                data-endelementdelay="0.1"
-                data-endspeed="300"
-                style="
-                  z-index: 9;
-                  max-width: auto;
-                  max-height: auto;
-                  white-space: nowrap;
-                  border-radius: 5px;
-                "
-              >
-                <div
-                  style="
-                    text-align: left;
-                    background: #525866;
-                    border-radius: 5px;
-                  "
-                >
-                  <a
-                    href="procedures.html"
-                    class="read-more"
-                    style="
-                      line-height: initial;
-                      color: #fff;
-                      text-transform: uppercase;
-                      font-weight: 500;
-                      padding: 12px 36px;
-                      display: inline-block;
-                      font-size: 18px;
-                    "
-                    >read more</a
-                  >
-                </div>
+              Live Healthier Lives.
               </div>
             </li>
           </ul>
@@ -830,197 +731,65 @@
 
       <!--End Banner-->
 
-      <!--Start Make Appointment-->
-      <div class="make-appointment">
-        <div class="container">
-          <ul id="accordion" class="accordion">
-            <li>
-              <div class="link">
-                <i class="fa fa-database"></i
-                ><span class="appointment-title">Make an Appointment</span>
-                <i class="icon-chevron-down"></i>
-              </div>
-
-              <section class="bgcolor-3">
-                <p class="error" id="error" style="display: none"></p>
-                <p class="success" id="success" style="display: none"></p>
-
-                <form
-                  name="appointment_form"
-                  id="appointment_form"
-                  method="post"
-                  action="#"
-                  onSubmit="return false"
-                >
-                  <span class="input input--kohana">
-                    <input
-                      class="input__field input__field--kohana"
-                      type="text"
-                      id="input-29"
-                      name="input-29"
-                    />
-                    <label
-                      class="input__label input__label--kohana"
-                      for="input-29"
-                    >
-                      <i class="icon-user6 icon icon--kohana"></i>
-                      <span
-                        class="input__label-content input__label-content--kohana"
-                        >Your Name</span
-                      >
-                    </label>
-                  </span>
-                  <span class="input input--kohana">
-                    <input
-                      class="input__field input__field--kohana"
-                      type="text"
-                      id="input-30"
-                      name="input-30"
-                    />
-                    <label
-                      class="input__label input__label--kohana"
-                      for="input-30"
-                    >
-                      <i class="icon-dollar icon icon--kohana"></i>
-                      <span
-                        class="input__label-content input__label-content--kohana"
-                        >Email Address</span
-                      >
-                    </label>
-                  </span>
-                  <span class="input input--kohana last">
-                    <input
-                      class="input__field input__field--kohana"
-                      type="text"
-                      id="input-31"
-                      name="input-31"
-                    />
-                    <label
-                      class="input__label input__label--kohana"
-                      for="input-31"
-                    >
-                      <i class="icon-phone5 icon icon--kohana"></i>
-                      <span
-                        class="input__label-content input__label-content--kohana"
-                        >Phone Number</span
-                      >
-                    </label>
-                  </span>
-
-                  <span class="input input--kohana">
-                    <input
-                      class="input__field input__field--kohana"
-                      type="text"
-                      id="datepicker"
-                      placeholder="Appointment Date"
-                      onClick=""
-                      name="datepicker"
-                    />
-                  </span>
-
-                  <span class="input input--kohana message">
-                    <input
-                      class="input__field input__field--kohana"
-                      type="text"
-                      id="textarea"
-                      name="textarea"
-                    />
-                    <label
-                      class="input__label input__label--kohana"
-                      for="textarea"
-                    >
-                      <i class="icon-new-message icon icon--kohana"></i>
-                      <span
-                        class="input__label-content input__label-content--kohana"
-                        >Message</span
-                      >
-                    </label>
-                  </span>
-
-                  <input
-                    name="submit"
-                    type="submit"
-                    value="send"
-                    onClick="validateAppointment();"
-                  />
-                </form>
-              </section>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--End Make Appointment-->
-
       <!--Start Content-->
       <div class="content">
         <!--Start Services-->
-        <div class="services-one">
+        <div class="services-two">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
                 <div class="service-sec">
                   <div class="icon">
-                    <i class="icon-patient-bed"></i>
-                  </div>
-
-                  <div class="detail">
-                    <h5>Operation Theater</h5>
-                    <p>
-                      If you need a doctor for to consectetuer Lorem ipsum
-                      dolor, consectetur adipiscing elit Lorem ipsum dolor,
-                      consectetur Ut volutpat eros.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="service-sec">
-                  <div class="icon">
-                    <i class="icon-ambulanc"></i>
+                    <i class="fa-solid fa-hospital"></i>
                   </div>
 
                   <div class="detail">
                     <h5>Emergency Services</h5>
                     <p>
-                      If you need a doctor for to consectetuer Lorem ipsum
-                      dolor, consectetur adipiscing elit Lorem ipsum dolor,
-                      consectetur Ut volutpat eros.
+                      Our ICUs are equipped with modern technology and staffed by skilled professionals to provide critical care when it's needed most.
                     </p>
                   </div>
                 </div>
-              </div>
-
-              <div class="col-md-6">
                 <div class="service-sec">
                   <div class="icon">
-                    <i class="icon-mortar-pestle"></i>
+                    <i class="fa-solid fa-heart-pulse"></i>
                   </div>
 
                   <div class="detail">
-                    <h5>Regular Health Checkups</h5>
+                    <h5>Neonatal Intensive Care Unit (NICU)</h5>
                     <p>
-                      If you need a doctor for to consectetuer Lorem ipsum
-                      dolor, consectetur adipiscing elit Lorem ipsum dolor,
-                      consectetur Ut volutpat eros.
+                      Dedicated to the care of our tiniest patients, our NICU offers specialized support for newborns requiring intensive medical attention.
                     </p>
                   </div>
                 </div>
-              </div>
-
-              <div class="col-md-6">
                 <div class="service-sec">
                   <div class="icon">
                     <i class="icon-doctor"></i>
                   </div>
 
                   <div class="detail">
-                    <h5>Qualified Doctors</h5>
+                    <h5>Emergency Services</h5>
                     <p>
-                      If you need a doctor for to consectetuer Lorem ipsum
-                      dolor, consectetur adipiscing elit Lorem ipsum dolor,
-                      consectetur Ut volutpat eros.
+                      Available 24/7, our emergency department is prepared to handle urgent medical situations with efficiency and compassion.
                     </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div id="demo">
+                  <div class="span12">
+                    <div id="services-slide" class="owl-carousel">
+                      <div class="item">
+                        <img src="images/slider1.jpg" alt="" />
+                      </div>
+                      <!-- <div class="item">
+                        <img src="images/slider2.jpg" alt="" />
+                      </div> -->
+                      <!-- <div class="item">
+                        <img src="images/slider3.jpg" alt="" />
+                      </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1029,477 +798,285 @@
         </div>
         <!--End Services-->
 
+        <!--Start Services Three-->
+
+        <div class="clear"></div>
+        <!--End Services Three-->
+
         <!--Start Welcome-->
-        <div class="welcome dark-back">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="main-title">
-                  <h2><span>Welcome to</span> Kaade Hospitals</h2>
-                  <p>
-                    Where compassionate care and advanced medical expertise come
-                    together to provide exceptional healthcare services for you
-                    and your loved ones.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div id="tabbed-nav">
-              <ul>
-                <li><a>Overview</a></li>
-                <li><a>Departments</a></li>
-                <!-- <li><a>Patient life</a></li>
-                        <li><a>Baby Birth</a></li> -->
-              </ul>
-
-              <div>
-                <div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="welcome-serv-img">
-                        <img src="images/services-img2.jpg" alt="" />
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="detail">
-                        <h4>Overview</h4>
-                        <p>
-                          Kaade Hospital is a leading Tertiary Care Multi and
-                          Super Specialty Hospital located in West of Chord
-                          Road, Bangalore, under the flagship of Nandana Health
-                          Care Services (India) Pvt. Ltd. The 108-bed facility
-                          offers advanced healthcare services across all major
-                          specialties. With a focus on compassionate care and
-                          skilled medical expertise, Kaade Hospital strives to
-                          provide affordable and high-quality healthcare to the
-                          community. Led by experienced consultants, the
-                          hospital ensures exceptional patient care with a human
-                          touch. Conveniently situated in one of the city's
-                          busiest areas, Kaade Hospital is easily accessible to
-                          all.<br /><br />
-                        </p>
-                        <a href="about-us.html">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="welcome-serv-img">
-                        <img src="images/services-img3.jpg" alt="" />
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="detail">
-                        <h4>Our Departments</h4>
-                        <p>
-                          At Kaade Hospital, we offer a comprehensive range of
-                          specialized departments to cater to the diverse
-                          healthcare needs of our patients. Each department is
-                          equipped with state-of-the-art technology and staffed
-                          by expert professionals dedicated to providing the
-                          highest standard of care. From cardiology and
-                          orthopedics to pediatrics and emergency services, our
-                          hospital ensures that every patient receives
-                          personalized and effective treatment. Our
-                          multidisciplinary approach allows us to address
-                          various health concerns, ensuring a holistic
-                          healthcare experience for all.
-
-                          <br /><br />
-                        </p>
-                        <a href="about-us.html">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="welcome-serv-img">
-                        <img src="images/services-img1.jpg" alt="" />
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="detail">
-                        <h4>Patient Life in Hospital</h4>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat Duis.<br /><br />
-
-                          Voluptate velit esse cillum dolore eu fugiat nulla
-                          pariatur. Lorem ipsum dolor sit amet, consectetur
-                          adipisicing elit, sed do eiusmod tempor incididunt ut
-                          labore et dolore magna aliqua. Ut enim ad minim veniam
-                          quis nostrud exercitation.
-                        </p>
-                        <a href="about-us.html">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="welcome-serv-img">
-                        <img src="images/services-img4.jpg" alt="" />
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="detail">
-                        <h4>Latest Technology</h4>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat Duis.<br /><br />
-
-                          Voluptate velit esse cillum dolore eu fugiat nulla
-                          pariatur. Lorem ipsum dolor sit amet, consectetur
-                          adipisicing elit, sed do eiusmod tempor incididunt ut
-                          labore et dolore magna aliqua. Ut enim ad minim veniam
-                          quis nostrud exercitation.
-                        </p>
-                        <a href="about-us.html">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
         <!--End Welcome-->
 
-        <!--Start Specialists-->
-        <div class="meet-specialists">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="main-title">
-                  <h2><span>Meet Our</span> Specialists</h2>
-                  <p>
-                    If you need a doctor for to consectetuer Lorem ipsum dolor,
-                    consectetur adipiscing elit. Ut volutpat eros adipiscing
-                    nonummy.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div id="demo">
-              <div class="container">
-                <div class="row">
-                  <div class="span12">
-                    <div id="owl-demo4" class="owl-carousel">
-                      <div class="post item">
-                        <div class="gallery-sec">
-                          <div class="image-hover img-layer-slide-left-right">
-                            <img src="images/team-member1.jpg" alt="" />
-                            <div class="layer">
-                              <a href="#."><i class="icon-euro"></i></a>
-                              <a href="#."><i class="icon-yen"></i></a>
-                              <a href="#."
-                                ><i class="icon-caddieshoppingstreamline"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="detail">
-                          <h6>Dr. Andrew Bert</h6>
-                          <span>Outpatient Surgery</span>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Donec nec eros eget nisl fringilla commodo.
-                          </p>
-                          <a href="team-member-detail.html">- View Profile</a>
-                        </div>
-                      </div>
-                      <div class="post item">
-                        <div class="gallery-sec">
-                          <div class="image-hover img-layer-slide-left-right">
-                            <img src="images/team-member2.jpg" alt="" />
-                            <div class="layer">
-                              <a href="#."><i class="icon-euro"></i></a>
-                              <a href="#."><i class="icon-yen"></i></a>
-                              <a href="#."
-                                ><i class="icon-caddieshoppingstreamline"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="detail">
-                          <h6>Dr. Sara Stefon</h6>
-                          <span>Cardiologist</span>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Donec nec eros eget nisl fringilla commodo.
-                          </p>
-                          <a href="team-member-detail.html">- View Profile</a>
-                        </div>
-                      </div>
-                      <div class="post item">
-                        <div class="gallery-sec">
-                          <div class="image-hover img-layer-slide-left-right">
-                            <img src="images/team-member3.jpg" alt="" />
-                            <div class="layer">
-                              <a href="#."><i class="icon-euro"></i></a>
-                              <a href="#."><i class="icon-yen"></i></a>
-                              <a href="#."
-                                ><i class="icon-caddieshoppingstreamline"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="detail">
-                          <h6>Dr. Wahab Apple</h6>
-                          <span>Heart Specialist</span>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Donec nec eros eget nisl fringilla commodo.
-                          </p>
-                          <a href="team-member-detail.html">- View Profile</a>
-                        </div>
-                      </div>
-
-                      <div class="post item">
-                        <div class="gallery-sec">
-                          <div class="image-hover img-layer-slide-left-right">
-                            <img src="images/team-member4.jpg" alt="" />
-                            <div class="layer">
-                              <a href="#."><i class="icon-euro"></i></a>
-                              <a href="#."><i class="icon-yen"></i></a>
-                              <a href="#."
-                                ><i class="icon-caddieshoppingstreamline"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="detail">
-                          <h6>Dr. Mecan smith</h6>
-                          <span>Heart Specialist</span>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Donec nec eros eget nisl fringilla commodo.
-                          </p>
-                          <a href="team-member-detail.html">- View Profile</a>
-                        </div>
-                      </div>
-
-                      <div class="post item">
-                        <div class="gallery-sec">
-                          <div class="image-hover img-layer-slide-left-right">
-                            <img src="images/team-member5.jpg" alt="" />
-                            <div class="layer">
-                              <a href="#."><i class="icon-euro"></i></a>
-                              <a href="#."><i class="icon-yen"></i></a>
-                              <a href="#."
-                                ><i class="icon-caddieshoppingstreamline"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="detail">
-                          <h6>Dr. Jack Bravo</h6>
-                          <span>Heart Specialist</span>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Donec nec eros eget nisl fringilla commodo.
-                          </p>
-                          <a href="team-member-detail.html">- View Profile</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!--Start Services Four-->
+       
           </div>
         </div>
-        <!--End Specialists-->
-
-        <!--Start Doctor Quote-->
-        <div class="dr-quote">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <span class="quote"
-                  >"Meeting the challenges of an ever-changing healthcare
-                  environment."</span
-                >
-                <span class="name">- Dr. Jonathan Gobi</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--End Doctor Quote-->
-
+        <!--End Services Four-->
+       
         <!--Start Latest News-->
-        <div class="latest-news dark-back">
+       
+
+
+
+        <div class="services-four-dark">
           <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="main-title">
-                  <h2><span>Latest News from</span> Medical guide</h2>
-                  <p>
-                    If you need a doctor for to consectetuer Lorem ipsum dolor,
-                    consectetur adipiscing elit. Ut volutpat eros adipiscing
-                    nonummy.
-                  </p>
-                </div>
-              </div>
-            </div>
+             
+               <div class="row">
+             <div class="col-md-12">
+               <div class="main-title">
+                   <h2><span>Super</span> Specilaties</h2>
+                   <p>Kaade Hospital offers a variety of specialized services to address specific health needs:</p>
+               </div>
+               </div>
+               </div>
+               
+               <div class="row">
+                 
+                   <div class="col-md-4">
+                     <div class="services-sec">
+                         
+                         <div class="icon">
+                           <i class="fa-solid fa-stethoscope"></i>
+                           </div>
+                           <div class="detail">
+                             <h6>General Medicine</h6>
+                               <p>Our General Medicine department provides comprehensive, compassionate care using advanced diagnostics and personalized treatment plans.</p>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   
+                   <div class="col-md-4">
+                     <div class="services-sec">
+                         
+                         <div class="icon">
+                           <i class="fa-solid fa-user-doctor"></i>
+                           </div>
+                           <div class="detail">
+                             <h6>Diabetology</h6>
+                               <p>Our Diabetology department offers comprehensive, personalized care for diabetes management using advanced diagnostics and tailored treatment strategies.</p>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   
+                   <div class="col-md-4">
+                     <div class="services-sec">
+                         
+                         <div class="icon">
+                           <svg viewBox="0 0 64 64" style="color: white;" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64"><path d="m49.07 45.43 1.643 1.141c.457-.657.887-1.363 1.281-2.099l-1.763-.943a19.794 19.794 0 0 1-1.161 1.901zM40 11c-1.815 0-3.592.459-5.282 1.363-1.961 1.051-3.256 3.125-3.465 5.551l1.992.172c.153-1.775 1.034-3.219 2.417-3.959C37.059 13.379 38.518 13 40 13c7.047 0 13 8.701 13 19 0 3.353-.645 6.678-1.865 9.616l1.847.768C54.302 39.204 55 35.613 55 32c0-11.383-6.869-21-15-21z" fill="#ffffff" class="fill-000000"></path><path d="M40 7c-2.481 0-4.894.618-7.17 1.837-3.232 1.731-5.215 4.981-5.552 8.655A22.156 22.156 0 0 1 21 2V1h-6v1c0 9.597 4.764 18.372 12.759 23.614-.249.901-.681 1.716-1.307 2.327l-.549.536.375.669c.473.84.722 1.828.722 2.854s-.249 2.014-.721 2.854l-.375.669.549.536C27.436 37.02 28 38.455 28 40c0 .59-.082 1.166-.255 1.754A4.538 4.538 0 0 1 23.413 45H22c-9.374 0-17 7.626-17 17v1h7.82l.161-.804C14.046 56.867 18.764 53 24.198 53h1.465c2.448 0 4.68.604 6.456 1.746.229.146.466.286.71.417C35.106 56.382 37.519 57 40 57c10.477 0 19-11.215 19-25S50.477 7 40 7zM17.019 3h2.002a24.125 24.125 0 0 0 8.311 17.286c.088.664.228 1.334.425 2.002.1.339.158.693.197 1.051C21.334 18.604 17.322 11.163 17.019 3zM40 55c-2.148 0-4.243-.538-6.227-1.601a8.02 8.02 0 0 1-.572-.336C31.102 51.714 28.496 51 25.664 51h-1.465c-6.107 0-11.445 4.158-12.992 10H7.033C7.55 53.193 14.065 47 22 47h1.413c2.874 0 5.444-1.926 6.262-4.721A8.038 8.038 0 0 0 30 40c0-1.812-.594-3.53-1.65-4.824.427-.979.65-2.064.65-3.176s-.223-2.197-.65-3.176C29.406 27.53 30 25.812 30 24c0-.781-.109-1.548-.325-2.279-1.338-4.538.348-9.111 4.099-11.12C35.757 9.538 37.852 9 40 9c9.374 0 17 10.317 17 23s-7.626 23-17 23z" fill="#ffffff" class="fill-000000"></path></svg>
+                           </div>
+                           <div class="detail">
+                             <h6>Genera and Laparoscopic Surgery
+   
+                             </h6>
+                               <p>Our General and Laparoscopic Surgery department uses advanced, minimally invasive techniques for safe, effective care and rapid recovery.</p>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   
+                   <div class="bottom-serv">
+                   
+                   <div class="col-md-4">
+                     <div class="services-sec">
+                         
+                         <div class="icon">
+                           <i class="fa-solid fa-hand-holding-heart"></i>
+                           </div>
+                           <div class="detail">
+                             <h6>Dermatology</h6>
+           <p>Our Dermatology department uses advanced diagnostic and treatment methods for effective skin care.
+             Our dedicated team provides personalized care to promote optimal skin health.</p>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   
+                   <div class="col-md-4">
+                     <div class="services-sec">
+                         
+                         <div class="icon">
+                           <i class="fa-solid fa-mask-ventilator"></i>
+                           </div>
+                           <div class="detail">
+                             <h6>Pulmonology</h6>
+           <p>Our Pulmonology department provides advanced diagnostic and therapeutic care for respiratory conditions.</p>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   
+                   <div class="col-md-4">
+                     <div class="services-sec">
+                         
+                         <div class="icon">
+                           <i class="fa-solid fa-person-dress"></i>
+                           </div>
+                           <div class="detail">
+                             <h6>Obstetrics and Gynaecology</h6>
+                             <p>Our Obstetrics and Gynaecology department delivers comprehensive, personalized care for women's health, ensuring safe pregnancies and effective management of reproductive concerns.</p>
+                           </div>
+                           
+                       </div>
+                   </div>
+                   
+                   </div>
+                   <div class="bottom-serv">
+                   
+                     <div class="col-md-4">
+                       <div class="services-sec">
+                           
+                           <div class="icon">
+                             <i class="fa-solid fa-hospital-user"></i>
+                             </div>
+                             <div class="detail">
+                               <h6>Head, neck and ENT Surgery</h6>
+             <p>Our Head, Neck, and ENT Surgery department employs advanced, minimally invasive techniques for precise treatment of complex conditions.</p>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     
+                     <div class="col-md-4">
+                       <div class="services-sec">
+                           
+                           <div class="icon">
+                             <i class="fa-solid fa-bone"></i>
+                             </div>
+                             <div class="detail">
+                               <h6>Orthopaedic and Trauma </h6>
+             <p>Our Orthopaedic and Trauma department delivers comprehensive care for musculoskeletal injuries using advanced techniques.</p>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     
+                     <div class="col-md-4">
+                       <div class="services-sec">
+                           
+                           <div class="icon">
+                             <i class="fa-solid fa-user-nurse"></i>
+                             </div>
+                             <div class="detail">
+                               <h6>Pain Management
+                               </h6>
+                               <p>Our Pain Management department employs advanced, multidisciplinary approaches to alleviate both acute and chronic pain.</p>
+                             </div>
+                             
+                         </div>
+                     </div>
+                     
+                     </div>
+                     <div class="bottom-serv">
+                   
+                       <div class="col-md-4">
+                         <div class="services-sec">
+                             
+                             <div class="icon">
+                               <i class="fa-solid fa-brain"></i>
+                               </div>
+                               <div class="detail">
+                                 <h6>Psychiatric</h6>
+               <p>Our Psychiatric department offers compassionate, evidence-based care for mental health challenges.
+                 Our expert team is dedicated to personalized treatment plans that foster recovery and enhance overall well-being.</p>
+                               </div>
+                               
+                           </div>
+                       </div>
+                       
+                       <div class="col-md-4">
+                         <div class="services-sec">
+                             
+                             <div class="icon">
+                               <i class="fa-solid fa-x-ray"></i>
+                               </div>
+                               <div class="detail">
+                                 <h6>Radiology and Imaging
+                                 </h6>
+               <p>Our Radiology department offers state-of-the-art imaging and diagnostic services for precise evaluations.</p>
+                               </div>
+                               
+                           </div>
+                       </div>
+                       
+                       <div class="col-md-4">
+                         <div class="services-sec">
+                             
+                             <div class="icon">
+                               <i class="fa-solid fa-house-medical"></i>
+                               </div>
+                               <div class="detail">
+                                 <h6>Pathology
+                                 </h6>
+                                 <p>Our Pathology department provides precise diagnostic insights using advanced laboratory techniques.
+                                   Our dedicated team ensures timely and accurate results to support optimal patient care.</p>
+                               </div>
+                               
+                           </div>
+                       </div>
+                       
+                       </div>
+                   
+               </div>
+               
+               
+           </div>
+      </div>
+       
 
-            <div id="latest-news">
-              <div class="container">
-                <div class="row">
-                  <div class="span12">
-                    <div id="owl-demo" class="owl-carousel">
-                      <div class="post item">
-                        <img
-                          class="lazyOwl"
-                          src="images/news-img1.jpg"
-                          alt=""
-                        />
-                        <div class="detail">
-                          <img src="images/news-dr1.jpg" alt="" />
-                          <h4>
-                            <a href="news-detail.html">Center for Medical</a>
-                          </h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit eros...
-                          </p>
-                          <span><i class="icon-clock3"></i> Apr 22, 2016</span>
-                          <span class="comment"
-                            ><a href="news-detail.html"
-                              ><i class="icon-icons206"></i> 5 Comments</a
-                            ></span
-                          >
-                        </div>
-                      </div>
-                      <div class="post item">
-                        <img
-                          class="lazyOwl"
-                          src="images/news-img2.jpg"
-                          alt=""
-                        />
-                        <div class="detail">
-                          <img src="images/news-dr2.jpg" alt="" />
-                          <h4>
-                            <a href="news-detail.html">Laboratory Tests</a>
-                          </h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit eros...
-                          </p>
-                          <span><i class="icon-clock3"></i> Apr 09, 2016</span>
-                          <span class="comment"
-                            ><a href="news-detail.html"
-                              ><i class="icon-icons206"></i> 3 Comments</a
-                            ></span
-                          >
-                        </div>
-                      </div>
 
-                      <div class="post item">
-                        <img
-                          class="lazyOwl"
-                          src="images/news-img3.jpg"
-                          alt=""
-                        />
-                        <div class="detail">
-                          <img src="images/news-dr1.jpg" alt="" />
-                          <h4>
-                            <a href="news-detail.html">Research Center</a>
-                          </h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit eros...
-                          </p>
-                          <span><i class="icon-clock3"></i> Mar 28, 2016</span>
-                          <span class="comment"
-                            ><a href="news-detail.html"
-                              ><i class="icon-icons206"></i> 0 Comments</a
-                            ></span
-                          >
-                        </div>
-                      </div>
 
-                      <div class="post item">
-                        <img
-                          class="lazyOwl"
-                          src="images/news-img4.jpg"
-                          alt=""
-                        />
-                        <div class="detail">
-                          <img src="images/news-dr2.jpg" alt="" />
-                          <h4><a href="news-detail.html">Child Birth</a></h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit eros...
-                          </p>
-                          <span><i class="icon-clock3"></i> Mar 15, 2016</span>
-                          <span class="comment"
-                            ><a href="news-detail.html"
-                              ><i class="icon-icons206"></i> 0 Comments</a
-                            ></span
-                          >
-                        </div>
-                      </div>
 
-                      <div class="post item">
-                        <img
-                          class="lazyOwl"
-                          src="images/news-img5.jpg"
-                          alt=""
-                        />
-                        <div class="detail">
-                          <img src="images/news-dr2.jpg" alt="" />
-                          <h4>
-                            <a href="news-detail.html">Special Treatment</a>
-                          </h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit eros...
-                          </p>
-                          <span><i class="icon-clock3"></i> Mar 04, 2016</span>
-                          <span class="comment"
-                            ><a href="news-detail.html"
-                              ><i class="icon-icons206"></i> 11 Comments</a
-                            ></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
         <!--End Latest News-->
 
+        <!--Start Fun Facts-->
+
+        <div class="fun-facts counter-iconic" id="counters">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="counter">
+                <span
+                  class="number quantity-counter1 quantity-counter highlight"
+                  >14+</span
+                >
+                <span class="what-do">SPECIALITIES</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="counter">
+                <span
+                  class="number quantity-counter2 quantity-counter highlight"
+                  >13+</span
+                >
+                <span class="what-do">SUPER SPECIALITIES</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="counter">
+                <span
+                  class="number quantity-counter3 quantity-counter highlight"
+                  >12+</span
+                >
+                <span class="what-do">FACILITIES</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="counter">
+                <span
+                  class="number quantity-counter4 quantity-counter highlight"
+                  >100+</span
+                >
+                <span class="what-do">BEDS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Fun Facts-->
+
         <!--Start Testimonials-->
-        <div class="patients-testi dark-testi">
+        <!-- <div class="patients-testi dark-back">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -1554,7 +1131,6 @@
                           <span class="name">Rubica Noi</span>
                           <span class="patient">Skin Patient</span>
                           <div class="height30"></div>
-
                           <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
@@ -1572,219 +1148,217 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!--End Testimonials-->
+      </div>
+
+
+
+      <div class="latest-news dark-back">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="main-title">
+                <h2><span>Latest Blogs from</span> Kaade Hospital</h2>
+                <p>
+                  Stay updated with the latest developments and healthcare
+                  innovations:
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="latest-news">
+            <div class="container">
+              <div class="row">
+                <div class="span12">
+                  <div id="owl-demo" class="owl-carousel">
+               
+                    <div class="post item">
+                      <img
+                        class="lazyOwl"
+                        src="images/blogcarusel2.jpg"
+                        alt=""
+                      />
+                      <div class="detail">
+                        <!-- <img src="images/news-dr1.jpg" alt="" /> -->
+                        <h4>
+                          <a href="news-detail2.html">Painless Surgery with Advanced Laparoscopy...</a>
+                        </h4>
+                        <p>
+                          Your heart works tirelessly to keep you alive, pumping
+                    blood and oxygen to every part of your body...
+                        </p>
+                        <span><i class="icon-clock3"></i> Jan 28, 2025</span>
+                      </div>
+                    </div>
+
+                    <div class="post item">
+                      <img
+                        class="lazyOwl"
+                        src="images/blogcorusel3.jpg"
+                        alt=""
+                      />
+                      <div class="detail">
+                        <!-- <img src="images/baby-boy.png" alt="" /> -->
+                        <h4>
+                          <a href="news-detail4.html">Breaking Myths About Cancer...</a>
+                        </h4>
+                        <p>
+                          Cancer is one of the most feared diseases, often surrounded by myths and misconceptions that...
+                        </p>
+                        <span><i class="icon-clock3"></i> Jan 28, 2025</span>
+                      </div>
+                    </div>
+
+
+                    <div class="post item">
+                      <img
+                        class="lazyOwl"
+                        src="images/blogcorusel5.jpg"
+                        alt=""
+                      />
+                      <div class="detail">
+                        <!-- <img src="images/baby-boy.png" alt="" /> -->
+                        <h4>
+                          <a href="news-detail5.html">Digestive Health Matters...</a>
+                        </h4>
+                        <p>
+                          Digestive health plays a vital role in our overall well-being. Yet, many of us ignore...
+                        </p>
+                        <span><i class="icon-clock3"></i> Jan 28, 2025</span>
+                      </div>
+                    </div>
+
+                    <div class="post item">
+                      <img
+                        class="lazyOwl"
+                        src="images/blogcorusel6.jpg"
+                        alt=""
+                      />
+                      <div class="detail">
+                        <!-- <img src="images/baby-boy.png" alt="" /> -->
+                        <h4>
+                          <a href="news-detail7.html">Why Mental Health is Just as Important...</a>
+                        </h4>
+                        <p>
+                          When we think about health, physical well-being often takes center stage leading...
+                        </p>
+                        <span><i class="icon-clock3"></i> Jan 28, 2025</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!--End Content-->
 
       <!--Start Footer-->
       <footer class="footer" id="footer">
         <div class="container">
+          <!-- Main Footer Section -->
+    
           <div class="row">
             <div class="col-md-12">
               <div class="emergency">
                 <i class="icon-phone5"></i>
                 <span class="text">For emergency cases</span>
-                <span class="number">1-300-400-8211</span>
-                <img src="images/emergency-divider.png" alt="" />
+                <span class="number">080 610 4444</span>
+                <img src="images/emergency-divider-dark.png" alt="" />
               </div>
             </div>
           </div>
-
-          <div class="main-footer">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="useful-links">
-                  <div class="title">
-                    <h5>Medical guide</h5>
-                  </div>
-
-                  <div class="detail">
-                    <ul>
-                      <li><a href="#.">Home</a></li>
-                      <li><a href="#.">About Us</a></li>
-                      <li><a href="#.">Services</a></li>
-                      <li><a href="#.">Departments</a></li>
-                      <li><a href="#.">Timetable</a></li>
-                      <li><a href="#.">Why Us</a></li>
-                      <li><a href="#.">Specilaties</a></li>
-                      <li><a href="#.">Contact Us</a></li>
-                      <li><a href="#.">Events</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="title">
-                  <h5>LATEST TWEETS</h5>
-                </div>
-
-                <div class="detail">
-                  <div class="tweets">
-                    <div class="icon">
-                      <i class="icon-yen"></i>
-                    </div>
-
-                    <div class="text">
-                      <p>
-                        <a href="#.">@Rotography</a> Please kindly use Support
-                        Forum: <a href="#.">Medical.co.uk</a>
-                      </p>
-                      <span>3 days ago</span>
-                    </div>
-                  </div>
-
-                  <div class="tweets">
-                    <div class="icon">
-                      <i class="icon-yen"></i>
-                    </div>
-
-                    <div class="text">
-                      <p>
-                        A quick launcher for WordPress dashboard
-                        <a href="#.">@Medical</a>
-                      </p>
-                      <span>about a week ago</span>
+          <div class="footer-center">
+            <div class="main-footer">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="get-touch">
+                    <a href="./index.html">
+                      <img class="footer-image img-fluid rounded" src="images/logootransparent.png" alt="Company Logo" />
+                    </a>
+                    <div class="detail">
+                      <div class="get-touch">
+                        <span class="text">Kaade Hospital today stands as a testimony to a commitment of competent and affordable medical care thus giving the best outcome, for everyone, everytime.</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-3">
-                <div class="newsletter">
-                  <div class="title">
-                    <h5>NEWSLETTER</h5>
-                  </div>
-
-                  <div class="detail">
-                    <div class="signup-text">
-                      <i class="icon-dollar"></i>
-                      <span
-                        >Sign up with your name and email to get updates fresh
-                        updates.</span
-                      >
+                <div class="col-md-4">
+                  <div class="useful-links">
+                    <div class="title">
+                      <h5>Useful Links</h5>
                     </div>
-
-                    <div class="form">
-                      <p
-                        class="subscribe_success"
-                        id="subscribe_success"
-                        style="display: none"
-                      ></p>
-                      <p
-                        class="subscribe_error"
-                        id="subscribe_error"
-                        style="display: none"
-                      ></p>
-
-                      <form
-                        name="subscribe_form"
-                        id="subscribe_form"
-                        method="post"
-                        action="#"
-                        onSubmit="return false"
-                      >
-                        <input
-                          type="text"
-                          data-delay="300"
-                          placeholder="Your Name"
-                          name="subscribe_name"
-                          id="subscribe_name"
-                          onKeyPress="removeChecks();"
-                          class="input"
-                        />
-                        <input
-                          type="text"
-                          data-delay="300"
-                          placeholder="Email Address"
-                          name="subscribe_email"
-                          id="subscribe_email"
-                          onKeyPress="removeChecks();"
-                          class="input"
-                        />
-                        <input
-                          name="Subscribe"
-                          type="submit"
-                          value="Subscribe"
-                          onClick="validateSubscription();"
-                        />
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="get-touch">
-                  <div class="title">
-                    <h5>GET IN TOUCH</h5>
-                  </div>
-
-                  <div class="detail">
-                    <div class="get-touch">
-                      <span class="text"
-                        >Medical Bibendum auctor, to consequat ipsum, nec
-                        sagittis sem</span
-                      >
-
-                      <ul>
-                        <li>
-                          <i class="icon-location"></i>
-                          <span
-                            >Medical Ltd, Manhattan 1258, New York, USA
-                            Lahore</span
-                          >
-                        </li>
-                        <li>
-                          <i class="icon-phone4"></i>
-                          <span>(+1) 234 567 8901</span>
-                        </li>
-                        <li>
-                          <a href="#."
-                            ><i class="icon-dollar"></i>
-                            <span>hello@medical-guide.com</span></a
-                          >
-                        </li>
+                    <div class="detail">
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./index2.html">Home</a></li>
+                        <li class="mb-2"><a href="./about-us.html">About</a></li>
+                        <li class="mb-2"><a href="./service3.html">Services</a></li>
+                        <li class="mb-2"><a href="./news-sidebar.html">Blogs</a></li>
+                        <li class="mb-2"><a href="./contact-us2.php">Contact</a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
+                <div class="col-md-4">
+                  <div class="get-touch">
+                    <div class="title">
+                      <h5>GET IN TOUCH</h5>
+                    </div>
+                    <div class="detail">
+                      <div class="get-touch">
+                     
+                        <ul class="list-unstyled ">
+                          <li class="d-flex align-items-start gap-3 ">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
+                          </li>
+                          <li class="d-flex align-items-start gap-3 mb-3">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>+91 080 23500244 /99022 53636</span>
+                          </li>
+                          <li class="d-flex align-items-start gap-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <a href="mailto:kaadehospitalblr@gmail.com">
+                              <span>kaadehospitalblr@gmail.com</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="row">
+    
+          <!-- Footer Bottom Section -->
+          <div class=" py-3" id="bottom">
+            <div class="row align-items-center">
               <div class="col-md-6">
-                <span class="copyrights"
-                  >Copyright &copy; 2015 Medical Guide. All right
-                  reserved.</span
-                >
+                <span class="copyrights">
+                  Copyright &copy; <span id="copyright"></span> Kaade Hospital. Made with ❤️ by <a style="color: orange;" href="https://sunrisedigital.co.in/" target="_blank">sunrise Digital Media </a>
+                </span>
               </div>
-
-              <div class="col-md-6">
-                <div class="social-icons">
-                  <a href="#." class="fb"><i class="icon-euro"></i></a>
-                  <a href="#." class="tw"><i class="icon-yen"></i></a>
-                  <a href="#." class="gp"><i class="icon-google-plus"></i></a>
-                  <a href="#." class="vimeo"><i class="icon-vimeo4"></i></a>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
       </footer>
       <!--End Footer-->
-
-      <a href="#0" class="cd-top"></a>
     </div>
+
+    <a href="#0" class="cd-top"></a>
 
     <script type="text/javascript" src="js/jquery.js"></script>
 
     <!-- SMOOTH SCROLL -->
-    <script type="text/javascript" src="js/scroll-desktop.js"></script>
-    <script type="text/javascript" src="js/scroll-desktop-smooth.js"></script>
+      <!-- <script type="text/javascript" src="js/scroll-desktop.js"></script>
+      <script type="text/javascript" src="js/scroll-desktop-smooth.js"></script> -->
 
     <!-- START REVOLUTION SLIDER -->
     <script
@@ -1806,91 +1380,93 @@
     <!-- Welcome Tabs -->
     <script type="text/javascript" src="js/tabs.js"></script>
 
-    <!-- All Carousel -->
-    <script type="text/javascript" src="js/owl.carousel.js"></script>
-
     <!-- Mobile Menu -->
     <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+
+    <!-- All Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
 
     <!-- All Scripts -->
     <script type="text/javascript" src="js/custom.js"></script>
 
-    <!-- Revolution Slider -->
     <script type="text/javascript">
-      jQuery(".tp-banner")
-        .show()
-        .revolution({
-          dottedOverlay: "none",
-          delay: 16000,
-          startwidth: 1170,
-          startheight: 720,
-          hideThumbs: 200,
+      jQuery(document).ready(function () {
+        jQuery(".tp-banner")
+          .show()
+          .revolution({
+            dottedOverlay: "none",
+            delay: 16000,
+            startwidth: 1170,
+            startheight: 750,
+            hideThumbs: 200,
 
-          thumbWidth: 100,
-          thumbHeight: 50,
-          thumbAmount: 5,
+            thumbWidth: 100,
+            thumbHeight: 50,
+            thumbAmount: 5,
 
-          navigationType: "nexttobullets",
-          navigationArrows: "solo",
-          navigationStyle: "preview",
+            navigationType: "bullet",
+            navigationArrows: "solo",
+            navigationStyle: "preview4",
 
-          touchenabled: "on",
-          onHoverStop: "on",
+            touchenabled: "on",
+            onHoverStop: "off",
 
-          swipe_velocity: 0.7,
-          swipe_min_touches: 1,
-          swipe_max_touches: 1,
-          drag_block_vertical: false,
+            swipe_velocity: 0.7,
+            swipe_min_touches: 1,
+            swipe_max_touches: 1,
+            drag_block_vertical: false,
 
-          parallax: "mouse",
-          parallaxBgFreeze: "on",
-          parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+            parallax: "mouse",
+            parallaxBgFreeze: "on",
+            parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
 
-          keyboardNavigation: "off",
+            keyboardNavigation: "off",
 
-          navigationHAlign: "center",
-          navigationVAlign: "bottom",
-          navigationHOffset: 0,
-          navigationVOffset: 20,
+            navigationHAlign: "center",
+            navigationVAlign: "bottom",
+            navigationHOffset: 0,
+            navigationVOffset: 20,
 
-          soloArrowLeftHalign: "left",
-          soloArrowLeftValign: "center",
-          soloArrowLeftHOffset: 20,
-          soloArrowLeftVOffset: 0,
+            soloArrowLeftHalign: "left",
+            soloArrowLeftValign: "center",
+            soloArrowLeftHOffset: 20,
+            soloArrowLeftVOffset: 0,
 
-          soloArrowRightHalign: "right",
-          soloArrowRightValign: "center",
-          soloArrowRightHOffset: 20,
-          soloArrowRightVOffset: 0,
+            soloArrowRightHalign: "right",
+            soloArrowRightValign: "center",
+            soloArrowRightHOffset: 20,
+            soloArrowRightVOffset: 0,
 
-          shadow: 0,
-          fullWidth: "on",
-          fullScreen: "off",
+            shadow: 0,
+            fullWidth: "on",
+            fullScreen: "off",
 
-          spinner: "spinner4",
+            spinner: "spinner4",
 
-          stopLoop: "off",
-          stopAfterLoops: -1,
-          stopAtSlide: -1,
+            stopLoop: "off",
+            stopAfterLoops: -1,
+            stopAtSlide: -1,
 
-          shuffle: "off",
+            shuffle: "off",
 
-          autoHeight: "off",
-          forceFullWidth: "off",
+            autoHeight: "off",
+            forceFullWidth: "off",
 
-          hideThumbsOnMobile: "off",
-          hideNavDelayOnMobile: 1500,
-          hideBulletsOnMobile: "off",
-          hideArrowsOnMobile: "off",
-          hideThumbsUnderResolution: 0,
+            hideThumbsOnMobile: "off",
+            hideNavDelayOnMobile: 1500,
+            hideBulletsOnMobile: "off",
+            hideArrowsOnMobile: "off",
+            hideThumbsUnderResolution: 0,
 
-          hideSliderAtLimit: 0,
-          hideCaptionAtLimit: 0,
-          hideAllCaptionAtLilmit: 0,
-          startWithSlide: 0,
-          videoJsPath: "rs-plugin/videojs/",
-          fullScreenOffsetContainer: "",
-        });
+            hideSliderAtLimit: 0,
+            hideCaptionAtLimit: 0,
+            hideAllCaptionAtLilmit: 0,
+            startWithSlide: 0,
+            videoJsPath: "rs-plugin/videojs/",
+            fullScreenOffsetContainer: "",
+          });
+      }); //ready
     </script>
+    <script src="js/switcher.js"></script>
   </body>
 </html>

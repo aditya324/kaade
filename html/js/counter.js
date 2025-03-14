@@ -56,7 +56,7 @@
 			
         $('.quantity-counter1').countTo({
             from: 0,
-            to: 37,
+            to: 14,
             speed: 2000,
             refreshInterval: 50,
             onComplete: function(value) {
@@ -65,7 +65,7 @@
         });
 		$('.quantity-counter2').countTo({
             from: 0,
-            to: 186,
+            to: 13,
             speed: 2000,
             refreshInterval: 50,
             onComplete: function(value) {
@@ -74,7 +74,7 @@
         });
 		$('.quantity-counter3').countTo({
             from: 0,
-            to: 25,
+            to: 12,
             speed: 2000,
             refreshInterval: 50,
             onComplete: function(value) {
@@ -83,7 +83,7 @@
         });
 		$('.quantity-counter4').countTo({
             from: 0,
-            to: 355,
+            to: 108,
             speed: 2000,
             refreshInterval: 50,
             onComplete: function(value) {

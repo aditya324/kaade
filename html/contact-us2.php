@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  <link rel="icon" type="image/png" href="images/favicon-medical.png" />
+ <link rel="icon" type="image/png" href="images/image-16x16.jpg" />
 
   <!--main file-->
   <link href="css/medical-guide.css" rel="stylesheet" type="text/css" />
@@ -203,7 +203,7 @@
           <div class="col-md-9">
             <nav class="menu-2">
               <ul class="nav wtf-menu">
-                <li class="parent"><a href="index2.html">Home</a></li>
+                <li class="parent"><a href="index.html">Home</a></li>
 
                 <li class="parent"><a href="about-us.html">About Us</a></li>
 
@@ -238,7 +238,7 @@
         <nav id="menu">
           <ul>
             <li class="parent">
-              <a href="index2.html">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li class="">
               <a href="about-us.html">About</a>
@@ -455,10 +455,12 @@
               <div class="row g-4">
                 <div class="col-md-4">
                   <div class="get-touch">
-                    <img class="footer-image img-fluid rounded" src="images/logootransparent.png" alt="Company Logo" />
+                    <a href="./index.html">
+                      <img class="footer-image img-fluid rounded" src="images/logootransparent.png" alt="Company Logo" />
+                    </a>
                     <div class="detail">
                       <div class="get-touch">
-                        <span class="text">Kaade Hospital today stands as a testimony to a commitment of Competent and Affordable medical care thus giving The Best Outcome, for Everyone, Everytime</span>
+                        <span class="text">Kaade Hospital today stands as a testimony to a commitment of competent and affordable medical care thus giving the best outcome, for everyone, everytime.</span>
                       </div>
                     </div>
                   </div>
@@ -486,9 +488,9 @@
                     </div>
                     <div class="detail">
                       <div class="get-touch">
-                        <span class="text">Medical Bibendum auctor, to consequat ipsum, nec sagittis sem</span>
-                        <ul class="list-unstyled mt-4">
-                          <li class="d-flex align-items-start gap-3 mb-3">
+                     
+                        <ul class="list-unstyled ">
+                          <li class="d-flex align-items-start gap-3 ">
                             <i class="fas fa-map-marker-alt mt-1"></i>
                             <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
                           </li>
