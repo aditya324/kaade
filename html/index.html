@@ -210,7 +210,268 @@
 
 
 </style>
+
+
+
+
+<style>
+  .get-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+
+
+
+.get-touch .title h5 {
+  font-size: 1.2rem;
+ 
+}
+
+.get-touch .detail ul {
+  padding-left: 0;
+}
+
+.get-touch .detail li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.get-touch .detail li i {
+  font-size: 1.5rem;
+}
+
+.get-touch .detail li span {
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+
+  /* Floating button styles */
+  .book-button {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #0066cc;
+      color: white;
+      padding: 15px 10px;
+      cursor: pointer;
+      z-index: 999;
+      border-radius: 8px 0 0 8px;
+      box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.3s ease;
+  }
+
+  .book-button.open {
+      right: 250px; /* Same as the menu width */
+  }
+
+  .book-button span {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+
+  /* Menu styles */
+  .side-menu {
+      position: fixed;
+      right: -250px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 250px;
+      background-color: white;
+      border-radius: 8px 0 0 8px;
+      box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      z-index: 998;
+      border-left: 5px solid #0066cc;
+  }
+
+  .side-menu.open {
+      right: 0;
+  }
+
+  .menu-item {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+      transition: background-color 0.2s ease;
+  }
+
+  .menu-item:last-child {
+      border-bottom: none;
+  }
+
+  .menu-item:hover {
+      background-color: #f5f5f5;
+  }
+
+  .menu-item i {
+      margin-right: 10px;
+      color: #0066cc;
+      font-size: 20px;
+      width: 24px;
+      text-align: center;
+  }
+
+  /* Call Us button */
+  .call-us-button {
+      background-color: #0066cc;
+      color: white !important;
+      padding: 12px 0;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+  }
+
+  .call-us-button:hover {
+      background-color: #0055b3;
+  }
+
+  .call-us-button i {
+      color: white !important;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+      .book-button {
+          padding: 12px 8px;
+          font-size: 14px;
+      }
+      
+      .side-menu {
+          width: 200px;
+      }
+      
+      .book-button.open {
+          right: 200px; /* Match the smaller menu width */
+      }
+  }
+
+  @media screen and (max-width: 480px) {
+      .book-button {
+          padding: 10px 6px;
+          font-size: 12px;
+          top: 70%; /* Position lower on mobile */
+      }
+      
+      .side-menu {
+          width: 180px;
+          top: 70%; /* Match button position */
+      }
+      
+      .book-button.open {
+          right: 180px; /* Match the smaller menu width */
+      }
+      
+      .menu-item {
+          padding: 12px 15px;
+      }
+      
+      .menu-item i {
+          font-size: 18px;
+      }
+  }
+
+  /* For very small screens */
+  @media screen and (max-width: 320px) {
+      .side-menu {
+          width: 160px;
+      }
+      
+      .book-button.open {
+          right: 160px;
+      }
+      
+      .menu-item {
+          padding: 10px;
+          font-size: 14px;
+      }
+  }
+
+  /* Touch devices optimization */
+  @media (hover: none) {
+      .book-button {
+          padding: 15px 10px; /* Larger touch target */
+      }
+      
+      .menu-item {
+          padding: 15px 20px; /* Larger touch target */
+      }
+  }
+
+
+
+
+
+  
+</style>
+
+
+
+
+<style>
+  .latest-news.dark-back {
+    position: relative;
+    background-color: #f8f9fa;
+  }
+  
+  .medical-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+  
+  .latest-news .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .post.item {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  </style>
   <body>
+
+
+    
     <div id="wrap">
       <!--Start PreLoader-->
       <div id="preloader">
@@ -729,6 +990,24 @@
         </div>
       </div>
 
+
+
+      <div class="book-button" id="bookButton">
+        <span>Book</span>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <a href="https://wa.me/123456789" class="menu-item" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp
+        </a>
+        <a href="tel:+123456789" class="menu-item ">
+            <i class="fas fa-phone"></i>
+            Call Us
+        </a>
+    </div>
+
       <!--End Banner-->
 
       <!--Start Content-->
@@ -1156,6 +1435,23 @@
 
 
       <div class="latest-news dark-back">
+        <!-- Add this SVG right after the opening div -->
+        <svg class="medical-pattern" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+          <!-- Simple Medical Crosses Pattern -->
+          <pattern id="crossPattern" patternUnits="userSpaceOnUse" width="60" height="60" patternTransform="rotate(45)">
+            <path d="M25,15 L25,5 L35,5 L35,15 L45,15 L45,25 L35,25 L35,35 L25,35 L25,25 L15,25 L15,15 Z" fill="#c0d6e8" />
+          </pattern>
+          
+          <!-- Simple Heartbeat Pattern -->
+          <pattern id="heartbeatPattern" patternUnits="userSpaceOnUse" width="100" height="100" y="50">
+            <path d="M0,50 L20,50 L25,30 L30,70 L35,40 L40,50 L100,50" stroke="#c0d6e8" fill="none" stroke-width="1"/>
+          </pattern>
+          
+          <!-- Apply patterns -->
+          <rect width="100%" height="100%" fill="url(#crossPattern)" />
+          <rect width="100%" height="100%" fill="url(#heartbeatPattern)" />
+        </svg>
+        
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -1168,40 +1464,30 @@
               </div>
             </div>
           </div>
-
+      
           <div id="latest-news">
             <div class="container">
               <div class="row">
                 <div class="span12">
                   <div id="owl-demo" class="owl-carousel">
-               
+                    <!-- Your existing blog items remain unchanged -->
                     <div class="post item">
-                      <img
-                        class="lazyOwl"
-                        src="images/blogcarusel2.jpg"
-                        alt=""
-                      />
+                      <img class="lazyOwl" src="images/blogcarusel2.jpg" alt="" />
                       <div class="detail">
-                        <!-- <img src="images/news-dr1.jpg" alt="" /> -->
                         <h4>
                           <a href="news-detail2.html">Painless Surgery with Advanced Laparoscopy...</a>
                         </h4>
                         <p>
                           Your heart works tirelessly to keep you alive, pumping
-                    blood and oxygen to every part of your body...
+                          blood and oxygen to every part of your body...
                         </p>
                         <span><i class="icon-clock3"></i> Jan 28, 2025</span>
                       </div>
                     </div>
-
+      
                     <div class="post item">
-                      <img
-                        class="lazyOwl"
-                        src="images/blogcorusel3.jpg"
-                        alt=""
-                      />
+                      <img class="lazyOwl" src="images/blogcorusel3.jpg" alt="" />
                       <div class="detail">
-                        <!-- <img src="images/baby-boy.png" alt="" /> -->
                         <h4>
                           <a href="news-detail4.html">Breaking Myths About Cancer...</a>
                         </h4>
@@ -1211,16 +1497,10 @@
                         <span><i class="icon-clock3"></i> Jan 28, 2025</span>
                       </div>
                     </div>
-
-
+      
                     <div class="post item">
-                      <img
-                        class="lazyOwl"
-                        src="images/blogcorusel5.jpg"
-                        alt=""
-                      />
+                      <img class="lazyOwl" src="images/blogcorusel5.jpg" alt="" />
                       <div class="detail">
-                        <!-- <img src="images/baby-boy.png" alt="" /> -->
                         <h4>
                           <a href="news-detail5.html">Digestive Health Matters...</a>
                         </h4>
@@ -1230,15 +1510,10 @@
                         <span><i class="icon-clock3"></i> Jan 28, 2025</span>
                       </div>
                     </div>
-
+      
                     <div class="post item">
-                      <img
-                        class="lazyOwl"
-                        src="images/blogcorusel6.jpg"
-                        alt=""
-                      />
+                      <img class="lazyOwl" src="images/blogcorusel6.jpg" alt="" />
                       <div class="detail">
-                        <!-- <img src="images/baby-boy.png" alt="" /> -->
                         <h4>
                           <a href="news-detail7.html">Why Mental Health is Just as Important...</a>
                         </h4>
@@ -1248,7 +1523,6 @@
                         <span><i class="icon-clock3"></i> Jan 28, 2025</span>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -1259,7 +1533,7 @@
       <!--End Content-->
 
       <!--Start Footer-->
-      <footer class="footer" id="footer">
+      <footer class="footer" id="footer" style="background-color: #13110C;"> 
         <div class="container">
           <!-- Main Footer Section -->
     
@@ -1290,7 +1564,7 @@
                 </div>
                 <div class="col-md-4">
                   <div class="useful-links">
-                    <div class="title">
+                    <div class="title" >
                       <h5>Useful Links</h5>
                     </div>
                     <div class="detail">
@@ -1306,35 +1580,63 @@
                 </div>
                 <div class="col-md-4">
                   <div class="get-touch">
-                    <div class="title">
+                    <div class="title" style="margin-top: 5px;">
                       <h5>GET IN TOUCH</h5>
                     </div>
-                    <div class="detail">
-                      <div class="get-touch">
-                     
-                        <ul class="list-unstyled ">
-                          <li class="d-flex align-items-start gap-3 ">
-                            <i class="fas fa-map-marker-alt mt-1"></i>
-                            <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
-                          </li>
-                          <li class="d-flex align-items-start gap-3 mb-3">
-                            <i class="fas fa-phone mt-1"></i>
-                            <span>+91 080 23500244 /99022 53636</span>
-                          </li>
-                          <li class="d-flex align-items-start gap-3">
-                            <i class="fas fa-envelope mt-1"></i>
-                            <a href="mailto:kaadehospitalblr@gmail.com">
-                              <span>kaadehospitalblr@gmail.com</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                    <div class="ded">
+                      <ul class="list-unstyled" style="margin-top: 35px;">
+                        <li class="d-flex align-items-center gap-3">
+                          <i class="fas fa-map-marker-alt mt-1"></i>
+                          <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3 mb-3">
+                          <i class="fas fa-phone mt-1"></i>
+                          <span>+91 080 23500244 /99022 53636</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                          <i class="fas fa-envelope mt-1"></i>
+                          <a href="mailto:kaadehospitalblr@gmail.com">
+                            <span>kaadehospitalblr@gmail.com</span>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
+                
               </div>
             </div>
           </div>
+
+
+          <!-- <div class="col-md-4">
+            <div class="get-touch" >
+              <div class="title" style="margin-top: 25px;">
+                <h5>GET IN TOUCH</h5>
+              </div>
+              <div class="detail">
+                <div class="get-touch">
+               
+                  <ul class="list-unstyled ">
+                    <li class="d-flex align-items-start gap-3 ">
+                      <i class="fas fa-map-marker-alt mt-1"></i>
+                      <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
+                    </li>
+                    <li class="d-flex align-items-start gap-3 mb-3">
+                      <i class="fas fa-phone mt-1"></i>
+                      <span>+91 080 23500244 /99022 53636</span>
+                    </li>
+                    <li class="d-flex align-items-start gap-3">
+                      <i class="fas fa-envelope mt-1"></i>
+                      <a href="mailto:kaadehospitalblr@gmail.com">
+                        <span>kaadehospitalblr@gmail.com</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> -->
     
           <!-- Footer Bottom Section -->
           <div class=" py-3" id="bottom">
@@ -1355,6 +1657,37 @@
     <a href="#0" class="cd-top"></a>
 
     <script type="text/javascript" src="js/jquery.js"></script>
+
+
+
+    <script>
+      // Get elements
+      const bookButton = document.getElementById('bookButton');
+      const sideMenu = document.getElementById('sideMenu');
+      
+      // Toggle menu when button is clicked
+      bookButton.addEventListener('click', function(event) {
+          sideMenu.classList.toggle('open');
+          bookButton.classList.toggle('open');
+          event.stopPropagation(); // Prevent document click from firing
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+          if (!bookButton.contains(event.target) && !sideMenu.contains(event.target)) {
+              sideMenu.classList.remove('open');
+              bookButton.classList.remove('open');
+          }
+      });
+
+      // Handle touch events for mobile
+      document.addEventListener('touchstart', function(event) {
+          if (!bookButton.contains(event.target) && !sideMenu.contains(event.target)) {
+              sideMenu.classList.remove('open');
+              bookButton.classList.remove('open');
+          }
+      }, {passive: true});
+  </script> 
 
     <!-- SMOOTH SCROLL -->
       <!-- <script type="text/javascript" src="js/scroll-desktop.js"></script>
