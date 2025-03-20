@@ -290,28 +290,28 @@ img:hover {transition: background-color 0.5s ease; }
 
 
 /*..... FOOTER ......*/
-.footer{ background:#434a5a; border-top:solid 6px #373e4c;}
+.footer{ background:#daedf1; border-top:solid 6px #daedf1;}
 .footer .emergency{ text-align:center; margin:70px 0 0 0;}
-.footer .emergency i{ color:#fff; display:block; font-size:65px; }
-.footer .emergency .text{ margin:25px 0 0 0; font-size:18px; font-family: 'Raleway', sans-serif; font-weight:800; color:#fff; display:block; text-transform: uppercase;}
-.footer .emergency .number{  margin: 6px 0 0 0;  display: block;  color: #fff;  font-size: 50px;  font-weight: 800;}
+.footer .emergency i{ color:#6C757D; display:block; font-size:65px; }
+.footer .emergency .text{ margin:25px 0 0 0; font-size:18px; font-family: 'Raleway', sans-serif; font-weight:800; color:#6C757D; display:block; text-transform: uppercase;}
+.footer .emergency .number{  margin: 6px 0 0 0;  display: block;  color: #6C757D;  font-size: 50px;  font-weight: 800;}
 .footer .emergency img{margin:10px 0 0 0; width:960px; }
 
 
 .main-footer{ padding:70px 0;}
 .main-footer .useful-links{  float: left;}
-.main-footer .title h5{   color: #fff;  text-transform: uppercase;  border-bottom: solid 1px #fff;  padding: 0 0 12px 0;  display: inline-block;
+.main-footer .title h5{   color: #6C757D;  text-transform: uppercase;  border-bottom: solid 1px #6C757D;  padding: 0 0 12px 0;  display: inline-block;
   margin: 0px 0 -1px 0;  float: left;}
-.main-footer .title{   border-bottom: solid 1px #999;  padding: 0 0 0 0;  float: left;  width: 100%;}
+.main-footer .title{   border-bottom: solid 1px #6C757D;  padding: 0 0 0 0;  float: left;  width: 100%;}
 .main-footer .detail{ margin:38px 0 0 0; float:left;} 
 .main-footer .useful-links ul li{   background: url(../images/links-arrow-light.png) no-repeat 0 9px;  margin: 0 0 16px 0;   float: left;  width: 50%;}
-.main-footer .useful-links ul li a{   color: #fff;  margin: 0 0 0 20px;  font-size: 18px;}
+.main-footer .useful-links ul li a{   color: #6C757D;  margin: 0 0 0 20px;  font-size: 18px;}
 .main-footer .tweets{  width: 100%;  float: left;  margin: 0 0 28px 0;}
 .main-footer .tweets .icon{ float:left;}
 .main-footer .tweets .icon i{ font-size:35px;   margin: 0 0 0 0;}
 .main-footer .tweets .text{ float:right; width:84%;}
-.main-footer .tweets .text p{ color:#fff; font-size:17px;}
-.main-footer .tweets .text a{ color:#fff; font-weight:700;}
+.main-footer .tweets .text p{ color:#6C757D; font-size:17px;}
+.main-footer .tweets .text a{ color:#6C757D; font-weight:700;}
 .main-footer .tweets .text span{ font-size:14px; color:#c7c9ce; margin:5px 0 0 0;   display: inline-block;}
 .main-footer .newsletter {}
 .main-footer .newsletter .signup-text{}
@@ -322,18 +322,18 @@ img:hover {transition: background-color 0.5s ease; }
 .main-footer .newsletter .form input[type=submit]{ background: #fff;  border: none;  text-transform: uppercase;  color: #373e4c;  font-weight: 700;  font-size: 14px;  padding: 10px 25px;  border-radius: 5px;}
 .main-footer .newsletter .form input[type=submit]:hover{ color:#fff; }
 
-.main-footer .get-touch .text{ color:#fff;}
+.main-footer .get-touch .text{ color:#6C757D;}
 .main-footer .get-touch ul{ margin:20px 0 0 0; }
 .main-footer .get-touch ul li{ margin:0 0 20px 0;}
-.main-footer .get-touch ul li i{ color:#fff;   float: left;  font-size: 26px;  margin:0 9px 0 0;}
-.main-footer .get-touch ul li span{ color:#fff; font-size: 18px;}
-.main-footer .get-touch ul li a{color:#fff; font-size: 18px; display:block;}
+.main-footer .get-touch ul li i{ color:#6C757D;   float: left;  font-size: 26px;  margin:0 9px 0 0;}
+.main-footer .get-touch ul li span{ color:#6C757D; font-size: 18px;}
+.main-footer .get-touch ul li a{color:#6C757D; font-size: 18px; display:block;}
 
 
 .footer-bottom{ background:#373e4c;   padding: 24px 0;}
-.footer-bottom .copyrights{ float:left; color:#fff; margin:3px 0 0 0; font-size:15px;}
+.footer-bottom .copyrights{ float:left; color:#6C757D; margin:3px 0 0 0; font-size:15px;}
 .footer-bottom .social-icons{ float:right;}
-.footer-bottom .social-icons a{   color: #fff;  border: solid 1px #fff;  padding: 7px 9px;  border-radius: 100%;  font-size: 16px;}
+.footer-bottom .social-icons a{   color: #6C757D;  border: solid 1px #6C757D;  padding: 7px 9px;  border-radius: 100%;  font-size: 16px;}
 .footer-bottom .social-icons a.fb:hover{   background: #5c85ce;  border: solid 1px #5c85ce;  }
 .footer-bottom .social-icons a.tw:hover{   background: #02c0f2;  border: solid 1px #02c0f2;  }
 .footer-bottom .social-icons a.gp:hover{   background: #eb6850;  border: solid 1px #eb6850;  }
@@ -370,9 +370,9 @@ img:hover {transition: background-color 0.5s ease; }
 .footer-light .main-footer .newsletter .signup-text i{   color: #454545;  font-size: 28px;  float: left;  margin:6px 12px 0 0; -webkit-transform: rotate(-40deg);    -moz-transform: rotate(-40deg);    -ms-transform: rotate(-40deg);    -o-transform: rotate(-40deg);    transform: rotate(-40deg);}
 .footer-light .main-footer .newsletter .signup-text span{color:#222;}
 .footer-light .main-footer .newsletter .form{ margin:20px 0 0 0;}
-.footer-light .main-footer .newsletter .form input[type=text]{ background: #fff;  border: solid 1px #ADADAD;  border-radius: 5px;  width: 100%;  color: #626262;  padding: 10px 14px;  font-size: 14px;  margin: 0 0 9px 0;}
+.footer-light .main-footer .newsletter .form input[type=text]{ background: #6C757D;  border: solid 1px #ADADAD;  border-radius: 5px;  width: 100%;  color: #626262;  padding: 10px 14px;  font-size: 14px;  margin: 0 0 9px 0;}
 .footer-light .main-footer .newsletter .form input[type=submit]{ background: #454545;  border: none;  text-transform: uppercase;  color: #fff;  font-weight: 700;  font-size: 14px;  padding: 10px 25px;  border-radius: 5px;}
-.footer-light .main-footer .newsletter .form input[type=submit]:hover{color:#fff; }
+.footer-light .main-footer .newsletter .form input[type=submit]:hover{color:#6C757D; }
 .footer-light ::-webkit-input-placeholder { /* WebKit browsers */    color:    #222;   font-weight: 300;   margin: -1px 0 0 15px;}
 .footer-light :-moz-placeholder { /* Mozilla Firefox 4 to 18 */   color:    #222;   opacity:  1;   font-weight: 300;   margin: -1px 0 0 15px;}
 .footer-light ::-moz-placeholder { /* Mozilla Firefox 19+ */   color:    #222;   opacity:  1;   font-weight: 300;   margin: -1px 0 0 15px;}
@@ -443,13 +443,13 @@ img:hover {transition: background-color 0.5s ease; }
 .services-four .services-sec .detail p{ margin:5px 0 0 0; }
 
 /*..... SERVICES FOUR DARK ......*/
-.services-four-dark {  padding: 90px 0; background:#222222;}
-.services-four-dark .main-title h2{ color:#fff;}
-.services-four-dark .main-title p{ color:#fff;}
+.services-four-dark {  padding: 90px 0; }
+.services-four-dark .main-title h2{ color:#444444;}
+.services-four-dark .main-title p{ color:#444444;}
 .services-four-dark .bottom-serv{ margin:60px 0 0 0;   display: inline-block;}
 .services-four-dark .services-sec .icon{ float:left; width:12%; }
-.services-four-dark .services-sec .icon i{ color:#fff; font-size: 36px;}
-.services-four-dark .services-sec .detail{ width:85%; float:right; color:#fff;}
+.services-four-dark .services-sec .icon i{ color:#444444; font-size: 36px;}
+.services-four-dark .services-sec .detail{ width:85%; float:right; color:#444444;}
 .services-four-dark .services-sec .detail p{ margin:5px 0 0 0;  }
 
 
