@@ -68,109 +68,42 @@
     </style>
 
 
+
 <style>
-  /* Footer styles */
-  .footer {
-    background-color: #434A5A;
-    color: #e0e0e0;
-    padding-top: 4rem;
-  }
+  .get-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
-  .main-footer {
-    width: 100%;
-  }
 
-  .title h5 {
-    color: #ffffff;
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-  }
 
-  .text {
-    color: #a0a0a0;
-    line-height: 1.7;
-  }
 
-  .useful-links a {
-    color: #e0e0e0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
 
-  .useful-links a:hover {
-    color: #ffffff;
-  }
 
-  .get-touch i {
-    color: #a0a0a0;
-  }
-
-  .get-touch a {
-    color: #e0e0e0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .get-touch a:hover {
-    color: #ffffff;
-  }
+.get-touch .title h5 {
+  font-size: 1.2rem;
  
+}
 
-  /* Footer Bottom Styles */
-  .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 3rem;
-  }
+.get-touch .detail ul {
+  padding-left: 0;
+}
 
-  .copyrights {
-    font-size: 0.9rem;
-    color: white;
-  }
+.get-touch .detail li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
 
-  .social-icons {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
-  }
+.get-touch .detail li i {
+  font-size: 1.5rem;
+}
 
-  .social-icon {
-    color: #a0a0a0;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-  }
-
-
-
-
-
-
-  .social-icon:hover {
-    color: #ffffff;
-  }
-
-  @media (max-width: 768px) {
-    .useful-links {
-      padding-top: 2rem;
-    }
-
-    .social-icons {
-      justify-content: center;
-      margin-top: 1rem;
-    }
-
-    .copyrights {
-      text-align: center;
-      display: block;
-      margin-bottom: 1rem;
-
-    }
-  }
-
-
-
-
-
+.get-touch .detail li span {
+  font-size: 1rem;
+}
 
 
 
@@ -182,19 +115,11 @@
 </style>
 
 
-<style>
 
-  .spacing-top{
-    padding-top: 105px;
-  }
-  
 
-  @media (max-width: 768px) {
-    .spacing-top {
-      padding-top: 0px;
-    }
-  }
-</style>
+
+
+
    
 	
   </head>
@@ -229,18 +154,36 @@
       <div class="row">
         <div class="col-md-3">
           <a href="index.html" class="logo"
-            ><img src="images/logoo.png" alt=""
+            ><img src="images/newlogo.webp" alt=""
           /></a>
         </div>
 
         <div class="col-md-9">
           <nav class="menu-2">
             <ul class="nav wtf-menu">
-              <li class="parent"><a href="index.html">Home</a></li>
+              <li class=""><a href="index.html">Home</a></li>
 
               <li class="item-select"><a href="about-us.html">About Us</a></li>
 
-              <li class="parent"><a href="service3.html">Specialities</a></li>
+              <li class="">
+                <a href="#.">Specilaties</a>
+                <ul class="submenu">
+                  <li><a href="./endocrinology.html">Endocrinology</a></li>
+                  <li><a href="./gastrioentology.html">Gastrioentology</a></li>
+                  <li><a href="./GastrointestinalSurgery.html">Gastrointestinal Surgery</a></li>
+                  <li><a href="./Urology.html">Urology</a></li>
+                  <li><a href="./Neonatal.html">Neonatal Intensive Care</a></li>
+                  <li><a href="./ReconstructiveSurgery.html">Reconstructive Surgery</a></li>
+                  <li><a href="./Oncology.html">Oncology</a></li>
+                  <li><a href="./CancerSurgey.html">Cancer Surgery</a></li>
+                  <li><a href="./Nephrology.html">Nephrology</a></li>
+                  <li><a href="./Neurology.html">Neurology</a></li>
+                  <li><a href="./NeuroAndSpine.html">NeuroAndSpine Surgery</a></li>
+                  <li><a href="./PlasticAndBurn.html">Plastic And Burn Surgery</a></li>
+                 
+                 
+                </ul>
+              </li>
 
               <li class="parent"><a href="news-sidebar.html">Blogs</a></li>
 
@@ -252,6 +195,10 @@
 
               <li class="parent">
                 <a href="contact-us2.php">Contact Us</a>
+              </li>
+
+              <li class="parent">
+                <a href="gallery-simple-three.html">Gallery</a>
               </li>
             </ul>
           </nav>
@@ -272,13 +219,29 @@
       <nav id="menu">
         <ul>
           <li class="">
-            <a href="index1.html">Home</a>
+            <a href="index2.html">Home</a>
           </li>
           <li class="select">
             <a href="about-us.html">About</a>
           </li>
-          <li>
-            <a href="service3.html">Service</a>
+          <li class="select">
+            <a href="#.">Specilaties</a>
+            <ul class="submenu">
+              <li><a href="./endocrinology.html">Endocrinology</a></li>
+              <li><a href="./gastrioentology.html">Gastrioentology</a></li>
+              <li><a href="./GastrointestinalSurgery.html">Gastrointestinal Surgery</a></li>
+              <li><a href="./Urology.html">urology</a></li>
+              <li><a href="./Neonatal.html">Neonatal Intensive Care</a></li>
+              <li><a href="./ReconstructiveSurgery.html">Reconstructive Surgery</a></li>
+              <li><a href="./Oncology.html">Oncology</a></li>
+              <li><a href="./CancerSurgey.html">Cancer Surgery</a></li>
+              <li><a href="./Nephrology.html">Nephrology</a></li>
+              <li><a href="./Neurology.html">Neurology</a></li>
+              <li><a href="./NeuroAndSpine.html">NeuroAndSpine Surgery</a></li>
+              <li><a href="./PlasticAndBurn.html">Plastic And Burn Surgery</a></li>
+             
+             
+            </ul>
           </li>
 
          
@@ -289,6 +252,9 @@
 
           <li>
             <a href="contact-us2.php">Contact Us</a>
+          </li>
+          <li>
+            <a href="./gallery-simple-three.html">Gallery</a>
           </li>
         </ul>
       </nav>
@@ -391,98 +357,7 @@
    
    
    <!--Start Our Hospital-->
-    <div class="hospital">
-    <div class="container">
-      
-      
-      
-      <div class="row">
-      <div class="col-md-6">
-          <div class="row">
-      <div class="col-md-12">
-        <div class="main-title">
-          <h2><span>Why Choose</span> Kaade Hospital</h2>
-        <p>Kaade Hospital offers world-class healthcare services in a patient-centered environment</p>
-        </div>
-      </div>
-      </div>		
-        <div id="hospital">
-
-
-        <div class="span12">
-        <div id="services-slide" class="owl-carousel">
-
-        <div class="item"><img src="images/image-1140x778.jpg" alt=""></div>
-        <!-- <div class="item"><img src="images/image-1140x774 (5).jpg" alt=""></div>
-        <div class="item"><img src="images/download (1).jpg" alt=""></div> -->
-
-        </div>
-        </div>
-
-
-        </div>
-              
-      </div>
-      
-      <div class="col-md-6">
-      <div class="why-choose-us">
-        <div class="row">
-        <div class="col-md-12">
-          <div class="main-title">
-          
-          
-          </div>
-        </div>
-        </div>
-      
-        <ul id="why-choose" class="why-choose spacing-top" >
-                  <li class="open">
-                      <div class="link">
-                        <i class="icon-first-aid-box"></i>Our Vision<i class="icon-chevron-down"></i>
-                      </div>
-                      <ul class="submenu" style="display: block;">
-                        <li>
-                          <p>
-                            Our vison has been to make the health of our community, our priority by striving to have the best outcome for every patient, every time. 
-                          </p>
-                        </li>
-                      </ul>
-                    </li>
-                    
-    
-                    <li>
-                      <div class="link">
-                        <i class="icon-heart-beat"></i>Our Services<i class="icon-chevron-down"></i>
-                      </div>
-                      <ul class="submenu">
-                        <li>
-                          <p>
-                            At Kaade Hospital, we offer a wide range of healthcare services designed to meet the needs of our patients. 
-                            From emergency care to specialized treatments, we are dedicated to providing quality medical services to 
-                            promote overall health and well-being. 
-                            <br/><br/>
-                            Our team of experienced doctors and healthcare professionals are here to provide compassionate care for all your medical needs.
-                          </p>
-                        </li>
-                      </ul>
-                    </li>
-                    
-    <li>
-      <div class="link"><i class="icon-mobile2"></i>Our Mission <i class="fa icon-chevron-down"></i></div>
-      <ul class="submenu">
-        <li>
-      <p>Our mission has been to strengthen the health of all by providing quality and compassionate healthcare. 
-  </p>
-      </li>
-      </ul>
-    </li>
-  </ul>
-  </div>
-      </div>
-      
-      </div>
-    </div>
-    </div>
+   
    <!--End Our Hospital-->
 
 
@@ -623,46 +498,7 @@
 </div>
 
 
-   <div class="fun-facts counter-iconic" id="counters">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="counter">
-          <span
-            class="number quantity-counter1 quantity-counter highlight"
-            >14+</span
-          >
-          <span class="what-do">SPECIALITIES</span>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="counter">
-          <span
-            class="number quantity-counter2 quantity-counter highlight"
-            >13+</span
-          >
-          <span class="what-do">SUPER SPECIALITIES</span>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="counter">
-          <span
-            class="number quantity-counter3 quantity-counter highlight"
-            >12+</span
-          >
-          <span class="what-do">FACILITIES</span>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="counter">
-          <span
-            class="number quantity-counter4 quantity-counter highlight"
-            >100+</span
-          >
-          <span class="what-do">BEDS</span>
-        </div>
-      </div>
-    </div>
-  </div>
+   
 
 
 
@@ -677,19 +513,12 @@
    
    
    <!--Start Footer-->
-   <footer class="footer" id="footer">
+   <footer class="footer" id="footer"  style="margin-top: 25px;"> 
     <div class="container">
       <!-- Main Footer Section -->
 
       <div class="row">
-        <div class="col-md-12">
-          <div class="emergency">
-            <i class="icon-phone5"></i>
-            <span class="text">For emergency cases</span>
-            <span class="number">080 610 4444</span>
-            <img src="images/emergency-divider-dark.png" alt="" />
-          </div>
-        </div>
+        
       </div>
       <div class="footer-center">
         <div class="main-footer">
@@ -697,7 +526,7 @@
             <div class="col-md-4">
               <div class="get-touch">
                 <a href="./index.html">
-                  <img class="footer-image img-fluid rounded" src="images/logootransparent.png" alt="Company Logo" />
+                  <img class="footer-image img-fluid rounded" src="images/newlogo.webp" alt="Company Logo" />
                 </a>
                 <div class="detail">
                   <div class="get-touch">
@@ -708,12 +537,12 @@
             </div>
             <div class="col-md-4">
               <div class="useful-links">
-                <div class="title">
+                <div class="title" >
                   <h5>Useful Links</h5>
                 </div>
                 <div class="detail">
-                  <ul class="list-unstyled">
-                    <li class="mb-2"><a href="./index2.html">Home</a></li>
+                  <ul class="" >
+                    <li  class="mb-2"><a href="./index2.html">Home</a></li>
                     <li class="mb-2"><a href="./about-us.html">About</a></li>
                     <li class="mb-2"><a href="./service3.html">Services</a></li>
                     <li class="mb-2"><a href="./news-sidebar.html">Blogs</a></li>
@@ -724,41 +553,80 @@
             </div>
             <div class="col-md-4">
               <div class="get-touch">
-                <div class="title">
+                <div class="title" style="margin-top: 5px;">
                   <h5>GET IN TOUCH</h5>
                 </div>
-                <div class="detail">
-                  <div class="get-touch">
-                 
-                    <ul class="list-unstyled ">
-                      <li class="d-flex align-items-start gap-3 ">
-                        <i class="fas fa-map-marker-alt mt-1"></i>
-                        <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
-                      </li>
-                      <li class="d-flex align-items-start gap-3 mb-3">
-                        <i class="fas fa-phone mt-1"></i>
-                        <span>+91 080 23500244 /99022 53636</span>
-                      </li>
-                      <li class="d-flex align-items-start gap-3">
-                        <i class="fas fa-envelope mt-1"></i>
-                        <a href="mailto:kaadehospitalblr@gmail.com">
-                          <span>kaadehospitalblr@gmail.com</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="ded">
+                  <ul class="list-unstyled" style="margin-top: 35px;">
+                    <li class="d-flex align-items-center gap-3">
+                      <i class="fas fa-map-marker-alt mt-1"></i>
+                      <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <i class="fas fa-phone mt-1"></i>
+                      <span>+91 080 23500244 /99022 53636</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3">
+                      <i class="fas fa-envelope mt-1"></i>
+                      <a href="mailto:kaadehelpdesk@gmail.com">
+                        <span>kaadehelpdesk@gmail.com</span>
+                      </a>
+                    </li>
+
+
+                    <li class="d-flex align-items- gap-3">
+                      <a href="https://www.instagram.com" target="_blank" class="text-decoration-none">
+                          <i class="fab fa-instagram"></i> 
+                      </a>
+                      <a href="https://www.facebook.com" target="_blank" class="text-decoration-none">
+                          <i class="fab fa-facebook-f"></i> 
+                      </a>
+                  </li>
+                  
+                  </ul>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
+
+
+      <!-- <div class="col-md-4">
+        <div class="get-touch" >
+          <div class="title" style="margin-top: 25px;">
+            <h5>GET IN TOUCH</h5>
+          </div>
+          <div class="detail">
+            <div class="get-touch">
+           
+              <ul class="list-unstyled ">
+                <li class="d-flex align-items-start gap-3 ">
+                  <i class="fas fa-map-marker-alt mt-1"></i>
+                  <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
+                </li>
+                <li class="d-flex align-items-start gap-3 mb-3">
+                  <i class="fas fa-phone mt-1"></i>
+                  <span>+91 080 23500244 /99022 53636</span>
+                </li>
+                <li class="d-flex align-items-start gap-3">
+                  <i class="fas fa-envelope mt-1"></i>
+                  <a href="mailto:kaadehospitalblr@gmail.com">
+                    <span>kaadehospitalblr@gmail.com</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
 
       <!-- Footer Bottom Section -->
       <div class=" py-3" id="bottom">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <span class="copyrights">
+            <span class="copyrights" style="color: #6c757d;">
               Copyright &copy; <span id="copyright"></span> Kaade Hospital. Made with ❤️ by <a style="color: orange;" href="https://sunrisedigital.co.in/" target="_blank">sunrise Digital Media </a>
             </span>
           </div>

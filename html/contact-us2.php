@@ -57,13 +57,53 @@
 
   <!--PreLoader-->
   <link href="css/loader.css" rel="stylesheet" type="text/css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!--Medical Guide Icons-->
+    <link
+      href="fonts/medical-guide-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .get-touch {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .get-touch .title h5 {
+        font-size: 1.2rem;
+      }
+
+      .get-touch .detail ul {
+        padding-left: 0;
+      }
+
+      .get-touch .detail li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+
+      .get-touch .detail li i {
+        font-size: 1.5rem;
+      }
+
+      .get-touch .detail li span {
+        font-size: 1rem;
+      }
+    </style>
 </head>
 
 
 <style>
   /* Footer styles */
   .footer {
-    background-color: #434A5A;
+   
     color: #e0e0e0;
     padding-top: 4rem;
   }
@@ -194,75 +234,116 @@
     <!--Start Header-->
 
     <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <a href="index.html" class="logo"><img src="images/image-438x125.jpg" alt="" /></a>
-          </div>
-
-          <div class="col-md-9">
-            <nav class="menu-2">
-              <ul class="nav wtf-menu">
-                <li class="parent"><a href="index.html">Home</a></li>
-
-                <li class="parent"><a href="about-us.html">About Us</a></li>
-
-                <li class="parent"><a href="service3.html">Specialities</a></li>
-                <li><a href="news-sidebar.html">Blogs</a></li>
-
-                <!-- <li class="parent"><a href="procedures.html">Procedures</a></li>
-                <li><a href="news-sidebar.html">Blogs</a></li>
-                <li class="parent">
-                  <a href="gallery-nimble-three.html">Gallery</a>
-                </li> -->
-
-                <li class="item-select">
-                  <a href="contact-us2.php">Contact Us</a>
-                </li>
-              </ul>
-            </nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <a href="index.html" class="logo"
+                ><img src="images/newlogo.webp" alt=""
+              /></a>
+            </div>
+    
+            <div class="col-md-9">
+              <nav class="menu-2">
+                <ul class="nav wtf-menu">
+                  <li class=""><a href="index.html">Home</a></li>
+    
+                  <li class=""><a href="about-us.html">About Us</a></li>
+    
+                  <li class="">
+                    <a href="">Specilaties</a>
+                    <ul class="submenu ">
+                      <li><a href="./endocrinology.html">Endocrinology</a></li>
+                      <li><a href="./gastrioentology.html">Gastrioentology</a></li>
+                      <li><a href="./GastrointestinalSurgery.html">Gastrointestinal Surgery</a></li>
+                      <li><a href="./Urology.html">Urology</a></li>
+                      <li><a href="./Neonatal.html">Neonatal Intensive Care</a></li>
+                      <li><a href="./ReconstructiveSurgery.html">Reconstructive Surgery</a></li>
+                      <li><a href="./Oncology.html">Oncology</a></li>
+                      <li><a href="./CancerSurgey.html">Cancer Surgery</a></li>
+                      <li><a href="./Nephrology.html">Nephrology</a></li>
+                      <li><a href="./Neurology.html">Neurology</a></li>
+                      <li><a href="./NeuroAndSpine.html">NeuroAndSpine Surgery</a></li>
+                      <li><a href="./PlasticAndBurn.html">Plastic And Burn Surgery</a></li>
+                     
+                     
+                    </ul>
+                  </li>
+    
+                  <li class="parent"><a href="news-sidebar.html">Blogs</a></li>
+    
+                  <!-- <li><a href="procedures.html">Procedures</a></li>
+                  <li><a href="news-sidebar.html">Blogs</a></li>
+                  <li class="parent">
+                    <a href="gallery-nimble-three.html">Gallery</a>
+                  </li> -->
+    
+                  <li class="item-select">
+                    <a href="contact-us2.php">Contact Us</a>
+                  </li>
+    
+                  <li class="parent">
+                    <a href="gallery-simple-three.html">Gallery</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
+      </header>
+    
+      <!--End Header-->
+    
+      <!-- Mobile Menu Start -->
+      <div class="container">
+        <div id="page">
+          <header class="header">
+            <a href="#menu"></a>
+          </header>
+    
+          <nav id="menu">
+            <ul>
+              <li class="">
+                <a href="index2.html">Home</a>
+              </li>
+              <li class="">
+                <a href="about-us.html">About</a>
+              </li>
+              <li class="">
+                <a href="#.">Specilaties</a>
+                <ul class="submenu">
+                  <li><a href="./endocrinology.html">Endocrinology</a></li>
+                  <li  class="select"><a href="./gastrioentology.html">Gastrioentology</a></li>
+                  <li><a href="./GastrointestinalSurgery.html">Gastrointestinal Surgery</a></li>
+                  <li><a href="./Urology.html">urology</a></li>
+                  <li><a href="./Neonatal.html">Neonatal Intensive Care</a></li>
+                  <li><a href="./ReconstructiveSurgery.html">Reconstructive Surgery</a></li>
+                  <li><a href="./Oncology.html">Oncology</a></li>
+                  <li><a href="./CancerSurgey.html">Cancer Surgery</a></li>
+                  <li><a href="./Nephrology.html">Nephrology</a></li>
+                  <li><a href="./Neurology.html">Neurology</a></li>
+                  <li><a href="./NeuroAndSpine.html">NeuroAndSpine Surgery</a></li>
+                  <li><a href="./PlasticAndBurn.html">Plastic And Burn Surgery</a></li>
+                 
+                 
+                </ul>
+              </li>
+    
+             
+              <li><a href="news-sidebar.html">Blogs</a></li>
+              <li>
+                <!-- <a href="gallery-nimble-three.html">Gallery</a> -->
+              </li>
+    
+              <li class="select">
+                <a href="contact-us2.php">Contact Us</a>
+              </li>
+              <li>
+                <a href="./gallery-simple-three.html">Gallery</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </header>
-
-    <!--End Header-->
-
-    <!-- Mobile Menu Start -->
-    <div class="container">
-      <div id="page">
-        <header class="header">
-          <a href="#menu"></a>
-        </header>
-
-        <nav id="menu">
-          <ul>
-            <li class="parent">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="">
-              <a href="about-us.html">About</a>
-            </li>
-            <li>
-              <a href="service3.html">Specialities</a>
-            </li>
-            <li>
-              <a href="news-sidebar.html">Blogs</a>
-            </li>
-
-            <!-- <li class=""><a href="procedures.html">Procedures</a></li>
-            <li><a href="news-sidebar.html">Blogs</a></li>
-            <li>
-              <a href="gallery-nimble-three.html">Gallery</a>
-            </li> -->
-
-            <li class="select">
-              <a href="contact-us2.php">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
   </div>
   <!-- Mobile Menu End -->
 
@@ -292,43 +373,7 @@
   <!--Start Content-->
   <div class="content">
     <div class="contact-us">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="our-location">
-              <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.46459479305!2d77.5464271!3d12.9963854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d66511f073f%3A0x2f7825ef54c7dcfb!2sKaade%20Hospital!5e0!3m2!1sen!2sin!4v1737712855389!5m2!1sen!2sin"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-              <!-- <div class="get-directions">
-                <form
-                  action="http://maps.google.com/maps"
-                  method="get"
-                  target="_blank">
-                  <input
-                    type="text"
-                    name="saddr"
-                    placeholder="Enter Your Address" />
-                  <input
-                    type="hidden"
-                    name="daddr"
-                    value="Kaade Hospital ,Thimmaiah Rd, Manjunath Nagar, Basaveshwar Nagar, Bengaluru, Karnataka 560010" />
-                  <input
-                    type="submit"
-                    value="Get directions"
-                    class="direction-btn" />
-                </form>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <div class="leave-msg dark-back">
         <div class="container">
@@ -414,7 +459,7 @@
                   <div class="detail">
                     <span><b>Phone:</b>+91 080 23500244 / 99022 53636</span>
                     <span><b>Email: </b>
-                    <a href="mailto:kaadehospitalblr@gmail.com">kaadehospitalblr@gmail.com</a></span>
+                    <a href="mailto:kaadehelpdesk@gmail.com"> kaadehelpdesk@gmail.com</a></span>
                     
                     <span><b>Address:</b> No.320/C & 321/A, 1st Stage, 2nd Phase, West Of Chord Road, Manjunatha Nagar, Bangalore - 560010
                     </span>
@@ -431,36 +476,74 @@
           </div>
         </div>
       </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="our-location">
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.46459479305!2d77.5464271!3d12.9963854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d66511f073f%3A0x2f7825ef54c7dcfb!2sKaade%20Hospital!5e0!3m2!1sen!2sin!4v1737712855389!5m2!1sen!2sin"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <!-- <div class="get-directions">
+                <form
+                  action="http://maps.google.com/maps"
+                  method="get"
+                  target="_blank">
+                  <input
+                    type="text"
+                    name="saddr"
+                    placeholder="Enter Your Address" />
+                  <input
+                    type="hidden"
+                    name="daddr"
+                    value="Kaade Hospital ,Thimmaiah Rd, Manjunath Nagar, Basaveshwar Nagar, Bengaluru, Karnataka 560010" />
+                  <input
+                    type="submit"
+                    value="Get directions"
+                    class="direction-btn" />
+                </form>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!--End Content-->
 
   <!--Start Footer-->
-  <footer class="footer" id="footer">
+  <footer class="footer" id="footer" style="margin-top: 25px">
         <div class="container">
           <!-- Main Footer Section -->
-    
-          <div class="row">
-            <div class="col-md-12">
-              <div class="emergency">
-                <i class="icon-phone5"></i>
-                <span class="text">For emergency cases</span>
-                <span class="number">080 610 4444</span>
-                <img src="images/emergency-divider-dark.png" alt="" />
-              </div>
-            </div>
-          </div>
+
+          <div class="row"></div>
           <div class="footer-center">
             <div class="main-footer">
               <div class="row g-4">
                 <div class="col-md-4">
                   <div class="get-touch">
                     <a href="./index.html">
-                      <img class="footer-image img-fluid rounded" src="images/logootransparent.png" alt="Company Logo" />
+                      <img
+                        class="footer-image img-fluid rounded"
+                        src="images/newlogo.webp"
+                        alt="Company Logo"
+                      />
                     </a>
                     <div class="detail">
                       <div class="get-touch">
-                        <span class="text">Kaade Hospital today stands as a testimony to a commitment of competent and affordable medical care thus giving the best outcome, for everyone, everytime.</span>
+                        <span class="text"
+                          >Kaade Hospital today stands as a testimony to a
+                          commitment of competent and affordable medical care
+                          thus giving the best outcome, for everyone,
+                          everytime.</span
+                        >
                       </div>
                     </div>
                   </div>
@@ -471,62 +554,121 @@
                       <h5>Useful Links</h5>
                     </div>
                     <div class="detail">
-                      <ul class="list-unstyled">
+                      <ul class="">
                         <li class="mb-2"><a href="./index2.html">Home</a></li>
-                        <li class="mb-2"><a href="./about-us.html">About</a></li>
-                        <li class="mb-2"><a href="./service3.html">Services</a></li>
-                        <li class="mb-2"><a href="./news-sidebar.html">Blogs</a></li>
-                        <li class="mb-2"><a href="./contact-us2.php">Contact</a></li>
+                        <li class="mb-2">
+                          <a href="./about-us.html">About</a>
+                        </li>
+                        <li class="mb-2">
+                          <a href="./service3.html">Services</a>
+                        </li>
+                        <li class="mb-2">
+                          <a href="./news-sidebar.html">Blogs</a>
+                        </li>
+                        <li class="mb-2">
+                          <a href="./contact-us2.php">Contact</a>
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="get-touch">
-                    <div class="title">
+                    <div class="title" style="margin-top: 5px">
                       <h5>GET IN TOUCH</h5>
                     </div>
-                    <div class="detail">
-                      <div class="get-touch">
-                     
-                        <ul class="list-unstyled ">
-                          <li class="d-flex align-items-start gap-3 ">
-                            <i class="fas fa-map-marker-alt mt-1"></i>
-                            <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
-                          </li>
-                          <li class="d-flex align-items-start gap-3 mb-3">
-                            <i class="fas fa-phone mt-1"></i>
-                            <span>+91 080 23500244 /99022 53636</span>
-                          </li>
-                          <li class="d-flex align-items-start gap-3">
-                            <i class="fas fa-envelope mt-1"></i>
-                            <a href="mailto:kaadehospitalblr@gmail.com">
-                              <span>kaadehospitalblr@gmail.com</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                    <div class="ded">
+                      <ul class="list-unstyled" style="margin-top: 35px">
+                        <li class="d-flex align-items-center gap-3">
+                          <i class="fas fa-map-marker-alt mt-1"></i>
+                          <span
+                            >West Of Chord Road, Manjunatha Nagar,
+                            Bangalore</span
+                          >
+                        </li>
+                        <li class="d-flex align-items-center gap-3 mb-3">
+                          <i class="fas fa-phone mt-1"></i>
+                          <span>+91 080 23500244 /99022 53636</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                          <i class="fas fa-envelope mt-1"></i>
+                          <a href="mailto:kaadehelpdesk@gmail.com">
+                            <span>kaadehelpdesk@gmail.com</span>
+                          </a>
+                        </li>
+
+                        <li class="d-flex align-items- gap-3">
+                          <a
+                            href="https://www.instagram.com"
+                            target="_blank"
+                            class="text-decoration-none"
+                          >
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                          <a
+                            href="https://www.facebook.com"
+                            target="_blank"
+                            class="text-decoration-none"
+                          >
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-    
+
+          <!-- <div class="col-md-4">
+            <div class="get-touch" >
+              <div class="title" style="margin-top: 25px;">
+                <h5>GET IN TOUCH</h5>
+              </div>
+              <div class="detail">
+                <div class="get-touch">
+               
+                  <ul class="list-unstyled ">
+                    <li class="d-flex align-items-start gap-3 ">
+                      <i class="fas fa-map-marker-alt mt-1"></i>
+                      <span>West Of Chord Road, Manjunatha Nagar, Bangalore</span>
+                    </li>
+                    <li class="d-flex align-items-start gap-3 mb-3">
+                      <i class="fas fa-phone mt-1"></i>
+                      <span>+91 080 23500244 /99022 53636</span>
+                    </li>
+                    <li class="d-flex align-items-start gap-3">
+                      <i class="fas fa-envelope mt-1"></i>
+                      <a href="mailto:kaadehospitalblr@gmail.com">
+                        <span>kaadehospitalblr@gmail.com</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
           <!-- Footer Bottom Section -->
-          <div class=" py-3" id="bottom">
+          <div class="py-3" id="bottom">
             <div class="row align-items-center">
               <div class="col-md-6">
-                <span class="copyrights">
-                  Copyright &copy; <span id="copyright"></span> Kaade Hospital. Made with ❤️ by <a style="color: orange;" href="https://sunrisedigital.co.in/" target="_blank">sunrise Digital Media </a>
+                <span class="copyrights" style="color: #6c757d">
+                  Copyright &copy; <span id="copyright"></span> Kaade Hospital.
+                  Made with ❤️ by
+                  <a
+                    style="color: orange"
+                    href="https://sunrisedigital.co.in/"
+                    target="_blank"
+                    >sunrise Digital Media
+                  </a>
                 </span>
               </div>
-              
             </div>
           </div>
         </div>
       </footer>
-
   <!--End Footer-->
   </div>
 
