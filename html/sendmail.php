@@ -1,92 +1,120 @@
 <?php
 // send_mail.php
 
+declare(strict_types=1);
+
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception as MailException;
 use Dotenv\Dotenv;
 
 // 1) Only accept POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
     exit('Invalid access');
 }
 
-// 2) Load .env
+// 2) Autoload dependencies
 require __DIR__ . '/vendor/autoload.php';
-require __DIR__ . '/vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require __DIR__ . '/vendor/phpmailer/phpmailer/src/SMTP.php';
-require __DIR__ . '/vendor/phpmailer/phpmailer/src/Exception.php';
-require __DIR__ . '/vendor/vlucas/phpdotenv/src/Dotenv.php';
-$dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->load();
 
-
-
-
-// 3) Sanitize & validate inputs
-$name    = trim(filter_input(INPUT_POST, 'name',    FILTER_SANITIZE_STRING)) ?? '';
-$email   = trim(filter_input(INPUT_POST, 'email',   FILTER_SANITIZE_EMAIL))  ?? '';
-$subject = trim(filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING)) ?? '';
-$message = trim(filter_input(INPUT_POST, 'message', FILTER_UNSAFE_RAW))       ?? '';
-
-// Basic validation
-if (!$name || !$email || !$subject || !$message) {
-    echo '<script>alert("All fields are required.");window.history.back();</script>';
-    exit;
+// 3) Locate & load .env (search current and parent directory)
+$envLoaded = false;
+foreach ([__DIR__, dirname(__DIR__)] as $dir) {
+    if (file_exists($dir . '/.env') && is_readable($dir . '/.env')) {
+        Dotenv::createImmutable($dir)->load();
+        $envLoaded = true;
+        break;
+    }
 }
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo '<script>alert("Please enter a valid email address.");window.history.back();</script>';
-    exit;
+if (! $envLoaded) {
+    http_response_code(500);
+    exit('Configuration error: .env file not found');
 }
 
-// 4) Google reCAPTCHA verification
-$recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
-if (!$recaptchaResponse) {
-    echo '<script>alert("Please complete the reCAPTCHA.");window.history.back();</script>';
+// 4) Sanitize & validate inputs
+$name    = trim(filter_input(INPUT_POST, 'name',    FILTER_SANITIZE_STRING) ?: '');
+$email   = trim(filter_input(INPUT_POST, 'email',   FILTER_SANITIZE_EMAIL)  ?: '');
+$subject = trim(filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING) ?: '');
+$message = trim(filter_input(INPUT_POST, 'message', FILTER_UNSAFE_RAW)       ?: '');
+
+if ($name === '' || $email === '' || $subject === '' || $message === '') {
+    echo '<script>alert("All fields are required.");history.back();</script>';
     exit;
 }
-$verifyUrl = 'https://www.google.com/recaptcha/api/siteverify'
-           . '?secret='   . urlencode($_ENV['RECAPTCHA_SECRET'])
-           . '&response=' . urlencode($recaptchaResponse);
-$verify    = file_get_contents($verifyUrl);
-$captcha   = json_decode($verify);
-if (empty($captcha->success)) {
-    echo '<script>alert("reCAPTCHA verification failed.");window.history.back();</script>';
+if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo '<script>alert("Please enter a valid email address.");history.back();</script>';
     exit;
 }
 
-// 5) Database connection (PDO)
+// 5) Verify reCAPTCHA
+$token  = $_POST['g-recaptcha-response'] ?? '';
+$secret = getenv('RECAPTCHA_SECRET') ?: '';
+
+if ($token === '') {
+    echo '<script>alert("Please complete the reCAPTCHA.");history.back();</script>';
+    exit;
+}
+if ($secret === '') {
+    http_response_code(500);
+    exit('Configuration error: RECAPTCHA_SECRET not set');
+}
+
+$ch = curl_init('https://www.google.com/recaptcha/api/siteverify');
+curl_setopt_array($ch, [
+    CURLOPT_POST           => true,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POSTFIELDS     => http_build_query([
+        'secret'   => $secret,
+        'response' => $token,
+        'remoteip' => $_SERVER['REMOTE_ADDR'],
+    ]),
+]);
+$response = curl_exec($ch);
+if ($response === false) {
+    $err = curl_error($ch);
+    curl_close($ch);
+    http_response_code(502);
+    exit("reCAPTCHA verification error: {$err}");
+}
+curl_close($ch);
+
+$captcha = json_decode($response, true);
+if (empty($captcha['success'])) {
+    $codes = implode(', ', $captcha['error-codes'] ?? ['unknown_error']);
+    echo "<script>alert('reCAPTCHA failed: {$codes}');history.back();</script>";
+    exit;
+}
+
+// 6) Database connection (PDO)
 try {
     $dsn = sprintf(
-      'mysql:host=%s;dbname=%s;charset=utf8mb4',
-      $_ENV['DB_HOST'], 
-      $_ENV['DB_NAME']
+        'mysql:host=%s;dbname=%s;charset=utf8mb4',
+        getenv('DB_HOST') ?: '',
+        getenv('DB_NAME') ?: ''
     );
-    $pdo = new PDO($dsn, $_ENV['DB_USER'], $_ENV['DB_PASS'], [
-      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-    ]);
+    $pdo = new PDO(
+        $dsn,
+        getenv('DB_USER') ?: '',
+        getenv('DB_PASS') ?: '',
+        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
+    );
 } catch (PDOException $e) {
     error_log('DB Connection Error: ' . $e->getMessage());
-    echo '<script>alert("Server error. Please try again later.");window.history.back();</script>';
+    echo '<script>alert("Server error. Please try again later.");history.back();</script>';
     exit;
 }
 
 try {
-    // 6) Prepare PHPMailer
+    // 7) Configure PHPMailer
     $mail = new PHPMailer(true);
-    $mail->SMTPDebug    = SMTP::DEBUG_OFF;  // Or DEBUG_SERVER for dev
-    $mail->Debugoutput  = function($str, $level) {
-        error_log("SMTP DEBUG level $level; message: $str");
-    };
     $mail->isSMTP();
-    $mail->Host         = $_ENV['SMTP_HOST'];
-    $mail->SMTPAuth     = false;
-    $mail->Username     = $_ENV['SMTP_USER'];
-    $mail->Password     = $_ENV['SMTP_PASS'];
-    $mail->SMTPSecure   = PHPMailer::ENCRYPTION_STARTTLS; // 'tls'
-    $mail->Port         = (int)$_ENV['SMTP_PORT'];
-    $mail->SMTPAutoTLS  = false;
-    $mail->SMTPOptions  = [
+    $mail->Host        = getenv('SMTP_HOST') ?: '';
+    $mail->SMTPAuth    = filter_var(getenv('SMTP_AUTH') ?? 'false', FILTER_VALIDATE_BOOLEAN);
+    $mail->Username    = getenv('SMTP_USER') ?: '';
+    $mail->Password    = getenv('SMTP_PASS') ?: '';
+    $mail->SMTPSecure  = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port        = (int)(getenv('SMTP_PORT') ?: 587);
+    $mail->SMTPAutoTLS = false;
+    $mail->SMTPOptions = [
         'ssl' => [
             'verify_peer'       => false,
             'verify_peer_name'  => false,
@@ -94,41 +122,42 @@ try {
         ],
     ];
 
-    // 7) Set email headers & body
-    $mail->setFrom($_ENV['SMTP_USER'], $_ENV['MAIL_FROM_NAME']);
-    $mail->addAddress($_ENV['SMTP_USER'], $_ENV['MAIL_FROM_NAME']);
+    // 8) Build the message
+    $mail->setFrom(getenv('MAIL_FROM_ADDRESS') ?: $mail->Username, getenv('MAIL_FROM_NAME') ?: '');
+    $mail->addAddress(getenv('MAIL_TO_ADDRESS') ?: $mail->Username);
     $mail->addReplyTo($email, $name);
 
-    $mail->Subject = 'Test';
+    $mail->Subject = $subject;
     $mail->isHTML(true);
     $mail->CharSet = 'UTF-8';
-    $mail->Body = 'Test message';
+    $mail->Body    = nl2br(htmlspecialchars($message, ENT_QUOTES, 'UTF-8'));
     $mail->AltBody = strip_tags($message);
 
-    // 8) Send mail
+    // 9) Send it
     $mail->send();
 
-    // 9) Save to database
-    $stmt = $pdo->prepare(
-      'INSERT INTO sent_mails (name, email, subject, message)
-       VALUES (:name, :email, :subject, :message)'
-    );
+    // 10) Save to DB
+    $stmt = $pdo->prepare('
+        INSERT INTO sent_mails (name, email, subject, message, sent_at)
+        VALUES (:name, :email, :subject, :message, NOW())
+    ');
     $stmt->execute([
-      ':name'    => $name,
-      ':email'   => $email,
-      ':subject' => $subject,
-      ':message' => $message
+        ':name'    => $name,
+        ':email'   => $email,
+        ':subject' => $subject,
+        ':message' => $message,
     ]);
 
-    // 10) Success feedback
+    // 11) Success feedback
     echo '<p class="success">Thank you! Your message has been sent.</p>';
 
-} catch (Exception $e) {
-    error_log('Mailer Error: ' . $e->getMessage());
+} catch (MailException $e) {
+    error_log('PHPMailer Error: ' . $e->getMessage());
     $msg = addslashes($e->getMessage());
-    echo "<script>
-            alert(\"Error sending email: {$msg}\");
-            window.history.back();
-          </script>";
+    echo "<script>alert(\"Error sending email: {$msg}\");history.back();</script>";
+    exit;
+} catch (Exception $e) {
+    error_log('General Error: ' . $e->getMessage());
+    echo '<script>alert("An unexpected error occurred.");history.back();</script>';
     exit;
 }

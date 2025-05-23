@@ -430,7 +430,7 @@
                     </div>
                     <div class="col-md-12">
                       <div class="g-recaptcha"
-                        data-sitekey="6LebXkYrAAAAAAzpEOgRh5f79bK4jde3wDeQa8lu"></div>
+                        data-sitekey="6Ldgj0YrAAAAACSBwwRiE3Z5QRnqO03DJm9znXOG"></div>
                     </div>
                     <div class="col-md-3">
                       <input
